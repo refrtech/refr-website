@@ -1,0 +1,36 @@
+let fileInput = document.getElementById("file-upload-input");
+let fileSelect = document.getElementsByClassName("file-upload-select")[0];
+fileSelect.onclick = function () {
+  fileInput.click();
+};
+fileInput.onchange = function () {
+  let filename = fileInput.files[0].name;
+  let selectName = document.getElementsByClassName("file-select-name")[0];
+  selectName.innerText = filename;
+};
+
+function myFunction(y) {
+  var x = document.getElementById("myLinks");
+  y.classList.toggle("change");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+// form
+
+function myFunction() {
+  document.getElementById("myDIV").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("myDIV").style.display = "none";
+}
+
+// function categoryList() {
+//   let categoryList = document.querySelector(".categories_lists");
+//   let categoryListDesk = document.querySelector(".categories_lists_desk");
+//   categoryList.classList.toggle("active");
+//   categoryListDesk.classList.toggle("active");
+// }
