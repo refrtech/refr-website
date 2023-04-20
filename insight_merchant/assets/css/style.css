@@ -503,6 +503,9 @@ header {
 }
 
 @media screen and (max-width: 1130px) {
+  .video-js {
+    width: 100vw;
+  }
   .bg_black_content {
     align-items: center;
     flex-direction: column;
