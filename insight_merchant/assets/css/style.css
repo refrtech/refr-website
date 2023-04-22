@@ -109,7 +109,7 @@ html {
 }
 
 header {
-  padding: 20px 60px;
+  padding: 30px 60px;
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -124,7 +124,7 @@ header {
   display: flex;
   align-items: end;
   margin: 0;
-  gap: 1.2rem;
+  gap: 1.5rem;
 }
 
 .header_list li {
@@ -171,6 +171,7 @@ header {
 
 .heading_contents h1 {
   font-size: 50px;
+  font-weight: 600;
 }
 
 .heading_contents p {
@@ -179,8 +180,8 @@ header {
 }
 
 .img_header {
-  width: 500px;
-  height: 400px;
+  width: 517px;
+  height: 446px;
   margin-left: auto;
 }
 
@@ -191,12 +192,12 @@ header {
 }
 
 .discover_name {
-  width: 60%;
-  margin: auto;
+  width: 80%;
+  margin: 4rem auto;
 }
 
 .discover_name h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .discover_name p {
@@ -215,8 +216,8 @@ header {
 }
 
 .content_img {
-  width: 618px;
-  height: 577px;
+  width: 571px;
+  height: 438px;
 }
 
 .content_img_500 {
@@ -247,6 +248,10 @@ header {
 
 .content_text h3 {
   font-size: 3rem;
+}
+
+.content_text p {
+  font-size: 1.4rem;
 }
 
 .video_sectiom {
@@ -303,6 +308,7 @@ header {
   font-size: 1.2rem;
   color: black;
   cursor: pointer;
+  font-weight: 500;
 }
 
 /* Positions the plus sign 5px from the right. Centers it using the transform property. */
@@ -341,6 +347,7 @@ header {
 .accordion .container.active .content {
   height: auto;
   padding: 20px 0;
+  color: #757575;
 }
 
 /* Changes from plus sign to negative sign once active */
@@ -351,8 +358,12 @@ header {
 }
 
 .from_recommdention_conversion {
-  width: 75%;
-  margin: auto;
+  width: 100%;
+  margin: 6rem auto;
+}
+
+.from_recommdention_conversion h3 {
+  font-size: 2.25rem;
 }
 
 .get_demo {
@@ -361,7 +372,7 @@ header {
 
 .get_demo a {
   color: #ffffff;
-  padding: 10px 40px;
+  padding: 14px 50px;
 }
 
 @media screen and (max-height: 450px) {
@@ -620,6 +631,7 @@ header {
   .accordion .container.active .content {
     height: auto;
     padding: 20px 0;
+    color: #757575;
   }
 
   .from_recommdention_conversion {

@@ -171,6 +171,7 @@ header {
 
 .heading_contents h1 {
   font-size: 50px;
+  font-weight: 600;
 }
 
 .heading_contents p {
@@ -179,8 +180,8 @@ header {
 }
 
 .img_header {
-  width: 500px;
-  height: 400px;
+  width: 350px;
+  height: auto;
   margin-left: auto;
 }
 
@@ -190,12 +191,18 @@ header {
   object-fit: contain;
 }
 
-section {
+/* section {
   margin-bottom: 10rem;
 }
+*/
 
-section:last-child {
-  margin-bottom: 0;
+section {
+  margin-top: 0;
+  margin-bottom: 7rem;
+}
+
+.main {
+  margin-top: 7rem;
 }
 
 .serialNo h1 {
@@ -254,6 +261,7 @@ section:last-child {
   font-size: 1.2rem;
   color: black;
   cursor: pointer;
+  font-weight: 500;
 }
 
 /* Positions the plus sign 5px from the right. Centers it using the transform property. */
@@ -292,6 +300,7 @@ section:last-child {
 .accordion .container.active .content {
   height: auto;
   padding: 20px 0;
+  color: #777777;
 }
 
 /* Changes from plus sign to negative sign once active */
@@ -302,8 +311,12 @@ section:last-child {
 }
 
 .from_recommdention_conversion {
-  width: 75%;
-  margin: auto;
+  width: 100%;
+  margin: 6rem auto;
+}
+
+.from_recommdention_conversion h3 {
+  font-size: 2.25rem;
 }
 
 .get_demo {
@@ -312,7 +325,7 @@ section:last-child {
 
 .get_demo a {
   color: #ffffff;
-  padding: 10px 40px;
+  padding: 14px 50px;
 }
 
 @media screen and (max-height: 450px) {
