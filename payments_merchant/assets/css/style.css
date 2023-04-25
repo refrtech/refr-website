@@ -336,8 +336,12 @@ header {
 }
 
 .from_recommdention_conversion {
-  width: 75%;
-  margin: auto;
+  width: 100%;
+  margin: 6rem auto;
+}
+
+.from_recommdention_conversion h3 {
+  font-size: 2.25rem;
 }
 
 .get_demo {
@@ -347,6 +351,34 @@ header {
 .get_demo a {
   color: #ffffff;
   padding: 10px 40px;
+}
+
+.processingfess_section {
+  background: #f7efff;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.procressingfee_header h4 {
+  font-size: 2rem;
+}
+
+.pf_content {
+  margin: 3rem 0 0 0;
+}
+
+.pf_heading h3 {
+  font-size: 1.2rem;
+}
+
+.pf_heading p {
+  font-size: 1rem;
+  padding: 0 0 1rem 0;
+  min-height: 7rem;
+}
+
+.pf_heading article {
+  font-size: 1rem;
 }
 
 @media screen and (max-height: 450px) {
@@ -580,5 +612,57 @@ header {
   }
   .become_partner {
     font-size: 20px !important;
+  }
+
+  .content1 {
+    flex-direction: column;
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .content_img {
+    width: 80%;
+  }
+
+  .content_text {
+    width: 100%;
+    margin: auto;
+  }
+
+  .content_text h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .content_text p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .content2 {
+    flex-direction: column !important;
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .content_img2 {
+    width: 100%;
+  }
+
+  .processingfess_section {
+    padding: 20px;
+  }
+
+  .pf_contents {
+    flex-direction: column;
+    gap: 1rem !important;
+  }
+
+  .pf_content {
+    margin: 2rem 0 0 0;
+  }
+
+  .pf_heading p {
+    height: auto;
   }
 }

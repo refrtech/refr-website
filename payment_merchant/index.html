@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Refr</title>
     <link rel="icon" type="image/x-icon" href="../assets/merchant-favi.svg" />
 
@@ -16,19 +16,17 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
+
     <link rel="stylesheet" href="./assets/css/custom.css">
-
-    <!-- video -->
-
-    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 
+    <!-- aos animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-
 
     <nav class="header1 dflex bg_e4 ">
         <div class="dflex ms-5 JCcenter gap-3">
@@ -41,7 +39,7 @@
         <div class="sideleft">
             <div class="me-4">
                 <img loading="lazy" width="100"
-                    src="https://firebasestorage.googleapis.com/v0/b/refr/o/website%2Frefrlogo-white.svg?alt=media&token=ae1ed30f-677e-456c-bd9f-64cb319e7ac4"
+                    src="https://firebasestorage.googleapis.com/v0/b/refr/o/website%2Frefrlogo.png?alt=media&token=4e4cdd3b-1047-4094-a2c5-76cab75b40b8"
                     alt="Refr-logo" />
             </div>
             <div>
@@ -239,8 +237,7 @@
                         </button>
                         <ul class="dropdown-menu dropd_w">
                             <li>
-                                <a class="dropdown-item pb-4 pt-2" href="#"><span
-                                        class="text-black fw_600 fs-5">Offline</span>
+                                <a class="dropdown-item pb-4 pt-2" href="#"><span class="fw_600 fs-5">Offline</span>
                                     <span><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M3.53906 8.5H13.4557" stroke="black" stroke-linecap="round"
@@ -255,8 +252,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-4" href="#"><span
-                                        class="text-black fw_600 fs-5">Online</span>
+                                <a class="dropdown-item pb-4" href="#"><span class="fw_600 fs-5">Online</span>
                                     <span><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M3.53906 8.5H13.4557" stroke="black" stroke-linecap="round"
@@ -271,8 +267,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-4" href="#"><span
-                                        class="text-black fw_600 fs-5">Hybrid</span>
+                                <a class="dropdown-item pb-4" href="#"><span class="fw_600 fs-5">Hybrid</span>
                                     <span><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M3.53906 8.5H13.4557" stroke="black" stroke-linecap="round"
@@ -287,7 +282,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-4" href="#"><span class="text-black fw_600 fs-5">Food</span>
+                                <a class="dropdown-item pb-4" href="#"><span class="fw_600 fs-5">Food</span>
                                     <span><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M3.53906 8.5H13.4557" stroke="black" stroke-linecap="round"
@@ -302,8 +297,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-4" href="#"><span
-                                        class="text-black fw_600 fs-5">Services</span>
+                                <a class="dropdown-item pb-4" href="#"><span class="fw_600  fs-5">Services</span>
                                     <span><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M3.53906 8.5H13.4557" stroke="black" stroke-linecap="round"
@@ -318,8 +312,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="#"><span
-                                        class="text-black fw_600 fs-5">Retail</span>
+                                <a class="dropdown-item pb-2" href="#"><span class="fw_600  fs-5">Retail</span>
                                     <span><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M3.53906 8.5H13.4557" stroke="black" stroke-linecap="round"
@@ -344,15 +337,15 @@
                     <svg width="20" height="20" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M12 22.002C17.5228 22.002 22 17.5248 22 12.002C22 6.47911 17.5228 2.00195 12 2.00195C6.47715 2.00195 2 6.47911 2 12.002C2 17.5248 6.47715 22.002 12 22.002Z"
-                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M12 8.00195V12.002" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 8.00195V12.002" stroke="black" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
-                        <path d="M12 16.002H12.01" stroke="white" stroke-width="2" stroke-linecap="round"
+                        <path d="M12 16.002H12.01" stroke="black" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>&nbsp;How it works
                 </a>
             </li>
-            <li><a class="text-decoration-none black_text A_border_white tb10padding lr20padding A5radius"
+            <li><a class="text-decoration-none black_text A_border_black tb10padding lr20padding A5radius"
                     href="">Contact sales</a></li>
             <li><a class="text-decoration-none black_text purple_background A5radius White_txt tb10padding lr20padding">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -719,101 +712,406 @@
         </div>
     </div>
 
-    <div class="img-container">
-        <img src="./assets/imgs/shefash.png" alt="">
 
+
+    <div class="bg_black py-0 px-0 p-sm-3  px-md-0 py-md-5">
+        <div class="container py-0 px-0 p-sm-3  px-md-0 py-md-5">
+            <div class="row py-5 px-3 p-sm-3 px-md-4 py-md-5">
+                <div class="col col-sm-12 col-md-12">
+                    <div class="d-flex bg_black_content">
+                        <div class="col col-sm-6 col-md-6">
+                            <div class="heading_contents">
+                                <h1 class="text-white">Flexible payments to meet your customer needs</h1>
+                                <p class="text-white">Enhance the checkout experience & process every kind of payment
+                                </p>
+                                <div>
+                                    <a href="" class="purple_background text-white rounded-pill py-2 px-4">Get
+                                        Demo</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col col-sm-6 col-md-6">
+                            <div class="img_header">
+                                <img src="./assets/imgs/Group 13989 (1) 1.webp" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <div class="container py-0 px-0 p-sm-3 p-md-5">
+        <div class="row py-5 px-0 p-sm-3 p-md-5">
+            <div class="discover_name">
+                <h1 class="text-center fw-bolder text-black pb-3">Know your growth objective</h1>
+                <p class="text-center c_94">Tell us what you want to achieve for a tailored set of solutions, tools,
+                    and
+                    resources.
+                </p>
+            </div>
+
+            <div class="cards px-0 py-4 px-sm-3 py-sm-3 px-md-0 py-md-5 d-flex justify-content-between">
+                <div class="card_block">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="card_img">
+                            <img src="./assets/imgs/1.png" alt="">
+                        </div>
+                        <h5 class="text-center mt-1 mt-sm-2 mx-md-2 mt-md-4 mx-md-4">Brand awareness and reach</h5>
+                    </div>
+                </div>
+                <div class="card_block">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="card_img">
+                            <img src="./assets/imgs/2.png" alt="">
+                        </div>
+                        <h5 class="text-center mt-1 mt-sm-2 mx-md-2 mt-md-4 mx-md-4">Repeat customers</h5>
+                    </div>
+                </div>
+                <div class="card_block">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="card_img">
+                            <img src="./assets/imgs/3.png" alt="">
+                        </div>
+                        <h5 class="text-center mt-1 mt-sm-2 mx-md-2 mt-md-4 mx-md-4">Customer engagement</h5>
+                    </div>
+                </div>
+                <div class="card_block">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="card_img">
+                            <img src="./assets/imgs/4.png" alt="">
+                        </div>
+                        <h5 class="text-center mt-1 mt-sm-2 mx-md-2 mt-md-4 mx-md-4">Sales</h5>
+                    </div>
+                </div>
+                <div class="card_block">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="card_img">
+                            <svg width="26" height="40" viewBox="0 0 26 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2051_21809)">
+                                    <path
+                                        d="M11.75 16.8854C11.75 16.8854 13.7277 15.5665 15.2825 16.9107C15.4218 17.031 15.5341 17.1793 15.6121 17.3459C15.6901 17.5124 15.732 17.6936 15.7351 17.8774L15.7941 21.5103"
+                                        stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M15.6338 17.3951C15.6338 17.3951 17.4724 15.8399 19.3546 16.8182C19.724 17.0138 20.0326 17.3066 20.2471 17.6649C20.4616 18.0231 20.5738 18.4332 20.5714 18.8505V21.6718"
+                                        stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M20.4879 18.2502C21.0003 17.9673 21.5649 17.7912 22.1475 17.7326C22.4796 17.6991 22.8152 17.7349 23.1327 17.8377C23.4503 17.9405 23.743 18.1081 23.9923 18.3298C24.2415 18.5515 24.4419 18.8226 24.5806 19.1257C24.7193 19.4288 24.7934 19.7574 24.7982 20.0906C24.8366 22.4494 24.89 26.4709 24.8446 28.4116C24.8292 29.0766 24.6276 29.724 24.2626 30.2806C23.9353 30.7796 23.4946 31.4532 23.0851 32.085C22.5299 32.9419 22.2346 33.9407 22.2347 34.9613V38.8639H9.58008V32.619C7.37741 31.2807 5.40938 29.591 3.75425 27.6173L1.96605 25.4848C1.66177 25.1275 1.43342 24.7121 1.29485 24.2639C1.15629 23.8158 1.11041 23.3442 1.15999 22.8778C1.22354 22.3264 1.42692 21.7816 1.91503 21.4497C1.91503 21.4497 1.9571 21.4238 2.03311 21.3855C2.49461 21.1556 3.01527 21.0714 3.52589 21.144C4.0365 21.2166 4.51287 21.4427 4.89166 21.7921L6.40447 23.1791C6.4903 23.2578 6.59723 23.3099 6.7122 23.3289C6.82717 23.348 6.94521 23.3332 7.05191 23.2864C7.15861 23.2396 7.24936 23.1628 7.31308 23.0654C7.3768 22.968 7.41073 22.8542 7.41073 22.7379V10.6728C7.40557 10.0344 7.65247 9.41966 8.09798 8.96162C8.41731 8.6394 8.85696 8.37955 9.43546 8.40843C9.43546 8.40843 9.45664 8.40686 9.49501 8.40585C9.78897 8.39914 10.0813 8.45122 10.3548 8.55901C10.6283 8.6668 10.8774 8.82812 11.0875 9.03347C11.2976 9.23883 11.4644 9.48406 11.578 9.75474C11.6917 10.0254 11.75 10.3161 11.7494 10.6096L11.7494 21.4497"
+                                        stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path d="M14.208 8.0625H18.1026" stroke="black" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" />
+                                    <path d="M12.4727 5.27108L15.0277 2.7207" stroke="black" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" />
+                                    <path d="M9.58008 4.69425V1.03711" stroke="black" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" />
+                                    <path d="M6.10885 5.2708L3.86719 3.0332" stroke="black" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" />
+                                    <path d="M4.98848 8.0625H1.13867" stroke="black" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2051_21809">
+                                        <rect width="26" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h5 class="text-center mt-1 mt-sm-2 mx-md-2 mt-md-4 mx-md-4">Grow website visitors</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-3 px-4 p-sm-3 p-md-2">
+                <p class="m-0 text-center">Need help defining your objective? Connect with an expert to get help
+                    creating your
+                    strategy</p>
+                <div class="schedule_meeting text-center">
+                    <a href="" class="purple_txt">Schedule meeting</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-0 px-0 p-sm-3 px-md-0 py-md-0">
+        <div class="row py-0 px-0 p-sm-3  px-md-0 py-md-0">
+            <div class="discover_name">
+                <h1 class="text-center fw-bolder text-black pb-3">Get results with the right campaign</h1>
+                <p class="text-center c_94"> Campaigns for every business need
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container p-0 px-sm-3 py-sm-3 px-md-5 py-md-0">
+        <div class="row row1 py-0 px-3 p-sm-2 p-md-5">
+
+            <div class="contents">
+
+                <div class="content1 d-flex align-items-center " data-aos="fade-left">
+                    <div class="content_img">
+                        <img src="./assets/imgs/r1.webp" alt="">
+                    </div>
+                    <div class="content_text">
+                        <h3 class=" fw-bolder">Recommendation campaigns</h3>
+                        <p class="c_7">Let Happy Customers recommend your store to family and friends, reward them
+                            in
+                            Refr Tokens</p>
+                        <div class="learn_more mt-4">
+                            <a href="" class="purple_background text-white px-3 py-2 A5radius">Learn more</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content2 d-flex flex-row-reverse  align-items-center" data-aos="fade-right">
+                    <div class="content_img">
+                        <img src="./assets/imgs/r2.webp" alt="">
+                    </div>
+                    <div class="content_text margin_r18 w_40">
+                        <h3 class="fw-bolder">Loyalty campaigns</h3>
+                        <p class="c_7">Keep your store in your customers inbox all the time on the Refr App.
+                            Customers
+                            get notified about your loyalty offers, keeping them engaged & making them come back for
+                            more.</p>
+                        <div class="learn_more mt-4">
+                            <a href="" class="purple_background text-white px-3 py-2 A5radius">Learn more</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content1 d-flex align-items-center" data-aos="fade-left">
+                    <div class="content_img">
+                        <img src="./assets/imgs/r3.webp" alt="">
+                    </div>
+                    <div class="content_text w_40">
+                        <h3 class="fw-bolder">Offer Campaigns</h3>
+                        <p class="c_7">Run curated offers, special deals for the student community or flash offers
+                            on
+                            your store for particular days of the week to drive more sales. We feature these in the
+                            Students Special and Daily Drops sections of the app.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="bg_e1 mt-0 mt-sm-3 mt-md-5">
+        <div class="container py-5 px-2 p-sm-3 p-md-5">
+            <div class="row row1 py-3 px-2 py-md-3 px-md-0">
+                <div class="col col-sm-12 col-md-12">
+                    <div class="recommendation_content d-flex">
+                        <div>
+                            <div class="recommend_txt">
+                                <h6 class="text-black fw-normal">Campaign Management</h6>
+                            </div>
+                            <div class="how_does_it_work">
+                                <h4 class="text-black fw-bolder">How does It Work?</h4>
+                            </div>
+                            <div class="how_does_it_work-contents">
+                                <div class="main_content_how_it_work d-flex align-items-center justify-content-between">
+                                    <div class="col col-sm-6 col-md-6">
+                                        <div class="c_1">
+                                            <h5 class="text-black fw-bolder">Set up store and recommendation
+                                                campaign
+                                            </h5>
+                                            <p class="c_62">Sign up and create your store with your logo, banner &
+                                                store
+                                                details, followed by setting up your recommendation campaign.</p>
+                                        </div>
+                                        <div class="c_1 mt_4rem">
+                                            <h5 class="text-black fw-bolder">Create a Loyalty and Other Campaigns
+                                            </h5>
+                                            <p class="c_62">Set a reward structure according to your business
+                                                preference
+                                                to reward repeat customers . Also create curated campaigns to target
+                                                students and also flash campaigns to push sales on slow days.
+                                            </p>
+                                        </div>
+                                        <div class="c_1 mt_4rem c_1_border_none row1">
+                                            <h5 class="text-black fw-bolder">Increase Visibility </h5>
+                                            <p class="c_62">Gain higher visibility and attract more customer visits
+                                                to
+                                                your profile and store with the right campaigns.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-6 col-md-6 recommendation_img">
+                                        <img src="./assets/imgs/c1.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container p-3  px-sm-0 py-sm-0 px-md-5 py-md-5">
+        <div class="row  p-0 px-sm-0 py-sm-0 px-md-5 py-md-5">
+            <div class="bg_f5 A10radius">
+                <div class="testimonial_content">
+                    <div class="testimonial_img">
+                        <img src="./assets/imgs/sheefash.png" alt="">
+                    </div>
+                    <div class="testimonials_content">
+                        <h5 class="fw-medium">“Refr let’s our customers give us a shout out from the table which has
+                            led
+                            to increase in
+                            our order volume. We are very pleased with this genuine form of marketing for our
+                            restaurant”</h5>
+                        <p class="">Seefah Ketchaiyo,<span class="fw-medium">Seefah</span></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="container">
         <div class="row">
-            <div class="heading">
-                <h1 class="text-center fw-bolder">Join the world’s 1st people-powered marketplace</h1>
+            <div class="title_case">
+                <h3 class="fw-bolder">Case studies</h3>
+            </div>
+            <div class="titleCase_imgs">
+                <div class="casestudy_img">
+                    <img src="./assets/imgs/casestudy.png" alt="">
+                </div>
+                <div class="casestudy_img">
+                    <img src="./assets/imgs/casestudy.png" alt="">
+                </div>
+                <div class="casestudy_img">
+                    <img src="./assets/imgs/casestudy.png" alt="">
+                </div>
             </div>
 
-            <div class="main">
-
-
-                <div class="para">
-                    <p>Dessert Bliss is a small cake shop that specializes in creating custom cakes for weddings,
-                        birthdays, and other special occasions. The owner Arjun has been running the shop for three
-                        years in the suburb of Juhu, Mumbai. Despite having a loyal customer base, he wants to grow his
-                        business and reach a larger audience. He decides to list Dessert Bliss on Refr, a marketplace
-                        that works on recommendations and digitalizes word-of-mouth marketing. </p>
-                </div>
-                <div class="para">
-                    <h6 class="fw-bolder">Listing the Shop on Refr:</h6>
-                    <p>Arjun creates a hybrid seller account on Refr and lists his cakes, cupcakes, and other products
-                        to be sold both in-store and online. He provides detailed descriptions of each product and the
-                        Refr team ensures that his product listings are visually attractive, with high-quality images
-                        that showcase the beauty and artistry of his cakes. Refr provides a micro-website wherein all
-                        details - shop's location, hours, contact information and social handles are mentioned.</p>
-                    <p>Refr's unique feature of working on recommendations means that satisfied customers will recommend
-                        Dessert Bliss to others, thus expanding Arjun's customer base through the power of digital
-                        word-of-mouth.</p>
-                </div>
-                <div class="para">
-                    <h6 class="fw-bolder">Increasing Sales:</h6>
-                    <p>After listing Dessert Bliss on Refr, Arjun begins to see an increase in sales. His satisfied
-                        customers share their positive experiences on Refr, recommending Dessert Bliss to their friends
-                        and family. This leads to an influx of new customers, who are impressed with the quality of
-                        Arjun's cakes and the excellent customer service provided by his team. He takes advantage of
-                        Refr's social media and promotional tools to further advertise his cakes and gain more
-                        visibility.</p>
-                </div>
-                <div class="para">
-                    <h6 class="fw-bolder">Conclusion:</h2>
-                        <p>By listing Dessert Bliss on Refr, Arjun was able to boost his business and reach a get more
-                            customers. Refr's unique approach of working on recommendations helped Arjun to build a
-                            positive reputation on the marketplace, attract new customers, and ultimately grow his
-                            business. The success of Dessert Bliss on Refr enabled him to take his business to the next
-                            level and become a staple in the local dessert scene.</p>
-                </div>
-
-                <div class="comma mb-5">
-                    <svg width="93" height="56" viewBox="0 0 93 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M26.411 1L1 54.9126H36.7128L50.7919 21.6036H31.2185V1H26.411Z" fill="black"
-                            stroke="black" />
-                        <path d="M67.622 1L42.2109 54.9126H77.9238L92.0029 21.6036H72.4295V1H67.622Z" fill="black"
-                            stroke="black" />
-                    </svg>
-                </div>
-                <div>
-                    <h6 class="fw-bold fs-4">Refr let’s our customers give us a shout-out from the table which has led
-                        to
-                        increase in our order
-                        volume. We are very pleased with this genuine form of marketing for our restaurant.</h6>
-                </div>
-            </div>
         </div>
     </div>
 
-    </div>
 
-    <div class="">
-        <div class="marquee hidden">
-            <ul class="marquee-content">
-                <li>
-                    <img loading="lazy" src="./assets/imgs/brand-logo/Klome Logo Long Black.png" alt="">
-                </li>
-                <li>
-                    <img loading="lazy" src="./assets/imgs/brand-logo/Dent Heal Logo.png" alt="">
-                </li>
-                <li>
-                    <img loading="lazy" src="./assets/imgs/brand-logo/Deciwood Logo.png" alt="">
-                </li>
-                <li>
-                    <img loading="lazy" src="./assets/imgs/brand-logo/Kronos Logo.png" alt="">
-                </li>
+    <div class="container">
+        <div class="row">
+            <div class="title_case">
+                <h3 class="fw-bolder">FAQ’s</h3>
+            </div>
+            <div class="ques_ans m-0 my-sm-3 mx-sm-3 mx-md-0 my-md-4">
 
-                <li>
-                    <img loading="lazy" src="./assets/imgs/brand-logo/Men Deserve Logo.png" alt="">
-                </li>
+                <!-- accordion -->
 
+                <div class="accordion-body">
+                    <div class="accordion">
+                        <div class="container active">
+                            <div class="label fw_600">What are Refr Campaigns ?
+                            </div>
+                            <div class="content gray_txt"> Refr campaigns are an advertising solution designed to help
+                                small
+                                businesses promote their products and services . Refr campaigns lets merchants
+                                choose
+                                their business goals and needs. These campaigns use smart technology to monitor and
+                                improve the performance continuously, so you can spend more time on other business
+                                tasks.
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <div class="label fw_600">What are the different Campaigns that i can run for my business ?
+                            </div>
+                            <div class="content gray_txt"> You can run multiple campaigns for your business , starting
+                                with
+                                recommendation campaigns followed by loyalty and offer campaigns which include daily
+                                drops and student specific deiunts
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <div class="label fw_600">How do I set up the campaigns ?
+                            </div>
+                            <div class="content gray_txt">After you sign up you will be directed to the campaign page
+                                where
+                                you
+                                can set up your recommendation, loyalty and curated offer campaigns
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <div class="label fw_600">Who should I contact if I need help & support in getting
+                                onboarded?
 
-            </ul>
+                            </div>
+                            <div class="content gray_txt">You can connect with us at <b>info@refr.club</b> and a
+                                representation
+                                will shortly get in touch with you.
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <div class="label fw_600">Is my wallet refill a monthly recurring payment?
+                            </div>
+                            <div class="content gray_txt">No, wallet refill is not a monthly recurring payment. You pay
+                                only
+                                when
+                                a customer gives your business a shout-out & makes successful conversions for you.
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <div class="label fw_600">How do i download my Refr Qr Code?
+                            </div>
+                            <div class="content gray_txt">No, wallet refill is not a monthly recurring payment. You pay
+                                only
+                                when
+                                a customer gives your business a shout-out & makes successful conversions for you.
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <div class="label fw_600">When will i receive my Refr Qr merchandise ?
+                            </div>
+                            <div class="content gray_txt"> Your Refr Merchandise which comprises of a standee and door
+                                sticker
+                                or/and packaging cards is shipped to within 5-7 working days
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
 
+    </div>
 
+
+    <div class="bg_dc">
+        <div class="container px-2 py-1 px-sm-2 py-sm-2 px-md-4 py-md-5">
+            <div class="row px-2 py-5 px-sm-2 py-sm-2 px-md-4 py-md-5">
+                <div class="from_recommdention_conversion">
+                    <h3 class="text-center fw-semibold">From recommendations to conversions and everything in between.
+                        We’re an all-in-one marketplace.</h3>
+                    <div class="text-center get_demo">
+                        <a href="" class="rounded-pill purple_background">Get Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -1019,10 +1317,12 @@
                     <div class="col-sm-4 text-lg-right">
                         <div class="app_imgs">
                             <div class="app_img">
-                                <img loading="lazy" src="./assets/img/playstore.png" alt="sad">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/refr/o/website%2Fplaystore.png?alt=media&token=0d997e5b-738c-4012-bb48-0df8ae3bf8e5"
+                                    alt="sad">
                             </div>
                             <div class="app_img">
-                                <img loading="lazy" src="./assets/img/appstore.png" alt="sad">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/refr/o/website%2Fplaystore.png?alt=media&token=0d997e5b-738c-4012-bb48-0df8ae3bf8e5"
+                                    alt="sad">
                             </div>
                         </div>
 
@@ -1054,14 +1354,20 @@
 
     <!-- footer end -->
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
 
+
+    <!-- aos animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="./assets/js/index.js"></script>
 
