@@ -1144,6 +1144,9 @@ header {
 }
 
 @media screen and (max-width: 1130px) {
+  .header1 .ms-5 {
+    margin-left: 0 !important;
+  }
   .openNav {
     display: block;
   }

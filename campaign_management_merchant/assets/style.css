@@ -453,9 +453,33 @@ header {
   }
 }
 
+.sideleft .me-4 img {
+  display: block;
+}
+.sideleft .me-4 svg {
+  display: none;
+}
+
 @media screen and (max-width: 1130px) {
+  .header1 .ms-5 {
+    margin-left: 0 !important;
+  }
+  .sideleft .me-4 img {
+    display: none;
+  }
+  .sideleft .me-4 svg {
+    display: block;
+    width: 80%;
+  }
+
+  header {
+    padding: 8px 25px;
+    background-color: #000000;
+  }
+
   .openNav {
     display: block;
+    color: white;
   }
   .sideright {
     display: none;
@@ -519,10 +543,6 @@ header {
     margin: 8px 8px 8px 0px;
     width: max-content;
     padding: 8px 15px !important;
-  }
-
-  header {
-    padding: 20px 25px;
   }
 
   .dropdown_cc {
