@@ -59,6 +59,31 @@ html {
   width: 1000px;
 }
 
+.dropdown-item span {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-item span::after {
+  background-color: currentcolor;
+  bottom: 0.1em;
+  content: "";
+  height: 1em;
+  margin-left: 0.25em;
+  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg)
+    no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  transition: opacity 0.12s ease, transform 0.3s cubic-bezier(0.66, 0, 0.34, 1);
+  width: 1em;
+  display: block;
+  opacity: 0;
+}
+
+.dropdown-item span:hover::after {
+  opacity: 1;
+  right: 10px;
+}
+
 .dropd_w {
   padding: 30px;
   width: 500px;
@@ -109,7 +134,7 @@ html {
 }
 
 header {
-  padding: 20px 60px;
+  padding: 10px 60px 15px 60px;
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -139,7 +164,7 @@ header {
 
 .sideright {
   display: flex;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
   align-items: end;
 }
 
@@ -151,6 +176,10 @@ header {
   color: black;
   text-decoration: none;
   font-size: 1.2rem;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .closebtn {
@@ -207,26 +236,28 @@ header {
 }
 
 .discover_name {
-  width: 50%;
+  width: 100%;
+  max-width: 700px;
   margin: auto;
 }
 
 .discover_name h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .discover_name p {
   font-size: 1.2rem;
-}
-
-.contents {
+  width: 90%;
+  margin: auto;
 }
 
 .content1 {
-  margin-bottom: 6rem;
+  width: 90%;
+  margin: 0 auto 8rem auto;
 }
 .content2 {
-  margin-bottom: 6rem;
+  width: 90%;
+  margin: 0 auto 8rem auto;
 }
 
 .content_img {
@@ -259,23 +290,28 @@ header {
 
 .content_text {
   width: 33%;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 }
 
 .content_text h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .green_text h3 {
   font-size: 2.4rem;
 }
 
+.cards {
+  width: 95%;
+  margin: auto;
+}
+
 .card {
   width: 263px;
   height: 326px;
   border: 1px solid #fafafa;
-  box-shadow: 0px -2px 20px rgba(204, 204, 204, 0.25),
-    0px 4px 20px rgba(204, 204, 204, 0.25);
+  /* box-shadow: 0px -2px 20px rgba(204, 204, 204, 0.25),
+    0px 4px 20px rgba(204, 204, 204, 0.25); */
   background: #f7f7f7;
 }
 
@@ -297,8 +333,13 @@ header {
   color: #3f3f3f;
 }
 
+.recommendation_content {
+  width: 90%;
+  margin: auto;
+}
+
 .recommend_txt {
-  margin-bottom: 4rem;
+  margin: 4rem 0;
 }
 
 .recommend_txt h6 {
@@ -353,10 +394,11 @@ header {
 
 .title_case h3 {
   font-size: 2rem;
+  margin: 6rem 0 0 0;
 }
 
 .titleCase_imgs {
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
   display: flex;
   gap: 1.5rem;
 }
@@ -375,6 +417,7 @@ header {
 .accordion {
   color: black;
   background-color: white;
+  padding: 0 0 6rem 0;
 }
 
 .accordion .container {
@@ -438,8 +481,12 @@ header {
 }
 
 .from_recommdention_conversion {
-  width: 75%;
-  margin: auto;
+  width: 100%;
+  margin: 6rem auto;
+}
+
+.from_recommdention_conversion h3 {
+  font-size: 2.25rem;
 }
 
 .get_demo {
@@ -460,6 +507,13 @@ header {
   }
 }
 
+.sideleft .me-4 img {
+  display: block;
+}
+.sideleft .me-4 svg {
+  display: none;
+}
+
 @media screen and (max-width: 1130px) {
   .sidenav {
     display: block;
@@ -476,6 +530,26 @@ header {
   .sideheader {
     margin-top: 1rem;
     width: 100%;
+  }
+
+  .header1 .ms-5 {
+    margin-left: 0 !important;
+  }
+  .sideleft .me-4 img {
+    display: none;
+  }
+  .sideleft .me-4 svg {
+    display: block;
+    width: 80%;
+  }
+  header {
+    padding: 8px 25px;
+    background-color: #000000;
+  }
+
+  .openNav {
+    display: block;
+    color: white;
   }
 
   .sidenav {
@@ -524,10 +598,6 @@ header {
     margin: 8px 8px 8px 0;
     width: max-content;
     padding: 8px 15px !important;
-  }
-
-  header {
-    padding: 20px 25px;
   }
 
   .dropdown_cc {
@@ -631,6 +701,10 @@ header {
     font-size: 1rem;
   }
 
+  .contents {
+    overflow-x: hidden;
+  }
+
   .content1 {
     margin-bottom: 3rem;
   }
@@ -665,6 +739,10 @@ header {
     flex-direction: column !important;
     width: 100%;
     gap: 3rem;
+  }
+
+  .cards {
+    width: 100%;
   }
   .cards {
     flex-direction: column;
@@ -790,6 +868,7 @@ header {
 
   .from_recommdention_conversion {
     width: 100%;
+    margin: 0;
   }
 
   .from_recommdention_conversion h3 {
@@ -799,7 +878,4 @@ header {
   .nomargin {
     margin: 0;
   }
-}
-
-@media screen and (max-width: 1070px) {
 }

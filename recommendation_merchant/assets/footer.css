@@ -274,7 +274,7 @@ span.badge-list {
 @media (max-width: 706px) {
   .container,
   .container-sm {
-    max-width: 95%;
+    max-width: 94%;
   }
 }
 

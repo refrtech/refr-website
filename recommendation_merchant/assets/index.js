@@ -6,12 +6,14 @@ const range = document.getElementById("range"),
       ),
       newPosition = 16 - newValue * 0.32;
     tooltip.innerHTML = `<span>${range.value}</span>`;
+    console.log("range", range.value);
     tooltip.style.left = `calc(${newValue}% + (${newPosition}px))`;
     document.documentElement.style.setProperty(
       "--range-progress",
       `calc(${newValue}% + (${newPosition}px))`
     );
   };
+
 document.addEventListener("DOMContentLoaded", setValue);
 range.addEventListener("input", setValue);
 
@@ -29,4 +31,19 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+}
+
+// rr
+
+function calc() {
+  var x = document.getElementById("amnt").value;
+  if (range.value != 0) {
+    let totalreach = x / range.value;
+    totalreachs.innerHTML = Math.round(totalreach);
+
+    let totalCov = (totalreach / 100) * 10;
+    totalcon.innerHTML = Math.round(totalCov);
+  } else {
+    totalreachs.innerHTML = 0;
+  }
 }
