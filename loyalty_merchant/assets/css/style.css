@@ -242,7 +242,7 @@ header {
 }
 
 .discover_name h1 {
-  font-size: 3rem;
+  font-size: 2.9rem;
 }
 
 .discover_name p {
@@ -294,7 +294,7 @@ header {
 }
 
 .content_text h3 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .green_text h3 {
@@ -515,6 +515,47 @@ header {
 }
 
 @media screen and (max-width: 1130px) {
+  .active .fw {
+    font-weight: 600 !important;
+  }
+  .active .rotate {
+    transform: rotate(0deg);
+    transition-duration: 0.3s;
+  }
+  .active .rotate {
+    transform: rotate(180deg);
+  }
+  .sidebar li .submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .sidenav a:hover {
+    color: #000;
+  }
+
+  .nav-item:first-child {
+    margin-top: 1rem;
+  }
+
+  .nav-item:nth-child(6) {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .login_cta a {
+    margin: 1rem 0;
+    background: #8100e9;
+    border-radius: 22px;
+    color: #ffffff !important;
+    width: 124px !important;
+    height: 44px;
+    text-align: center;
+  }
   .sidenav {
     display: block;
   }
@@ -543,7 +584,7 @@ header {
     width: 80%;
   }
   header {
-    padding: 8px 25px;
+    padding: 15px 25px;
     background-color: #000000;
   }
 
@@ -556,25 +597,27 @@ header {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     right: 0;
     background-color: #fff;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 40px;
   }
   .sidenav li {
     list-style-type: none;
   }
   .sidenav a {
-    padding: 8px 8px 8px 0;
+    padding: 8px 8px 10px 0px;
     text-decoration: none;
     font-size: 18px !important;
     color: #000;
     display: block;
     transition: 0.3s;
     max-width: 100%;
+    width: min-content;
+    min-width: max-content;
   }
 
   .dropdown button {
