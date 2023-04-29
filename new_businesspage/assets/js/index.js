@@ -30,24 +30,22 @@ const reviews = [
   },
   {
     id: 2,
-    desc: "This is the kind of marketing and selling tool we have been looking for , it helps to get you infront of the right audience by digitalising word of mouth",
-    storeName: "Rootsdent",
-    storeDetails: "Dr Ankita Mathur",
-    jd: "Dentist",
-    logo: "https://firebasestorage.googleapis.com/v0/b/refr/o/website%2F2.webp?alt=media&token=2c907b7a-5cea-45dd-ae78-ffc8003151c4",
-    banner:
-      "https://firebasestorage.googleapis.com/v0/b/refr/o/website%2F2.webp?alt=media&token=2c907b7a-5cea-45dd-ae78-ffc8003151c4",
+    desc: "Expanding our business was easy with Refr. Since our customers started recommending us, we gained recognition in our neighbourhood which lead to increased walk-ins.",
+    storeName: "Snip & Scissors",
+    storeDetails: "",
+    jd: "",
+    logo: "",
+    banner: "",
   },
-  // {
-  //   id: 3,
-  //   desc: "With Refr recommendations we increased our brand reach which led to increased footfalls",
-  //   storeName: "Estilo Salon",
-  //   storeDetails: "Abhishek",
-  //   jd: "Owner",
-  //   logo: "./assets/img/testimonial/Rectangle 10543.png",
-  //   banner:
-  //     "https://firebasestorage.googleapis.com/v0/b/refr/o/website%2F2.webp?alt=media&token=2c907b7a-5cea-45dd-ae78-ffc8003151c4",
-  // },
+  {
+    id: 3,
+    desc: "We are quite happy to list our brand on the Refr marketplace. Customers can easily pay with RefrCash, which let’s more people buy from us. They help with the cataloguing as well, so it’s been a smooth ride.",
+    storeName: "Wrapcart",
+    storeDetails: "",
+    jd: "",
+    logo: "",
+    banner: "",
+  },
 ];
 
 const desc = document.getElementById("desc");
