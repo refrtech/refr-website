@@ -240,6 +240,7 @@ header {
   padding: 8rem 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .division:nth-child(2) {
@@ -280,10 +281,10 @@ header {
   padding: 1rem 0 0 0 !important;
 }
 
-.heightWdith {
+/* .heightWdith {
   height: auto !important;
   width: 40%;
-}
+} */
 
 .division_content ul li {
   display: flex;
@@ -488,12 +489,15 @@ header {
   }
 
   .section__hero {
-    height: 210px;
+    height: 250px;
+    width: 250px;
+    margin: 2.3rem 0;
   }
 
   .crossFade__image {
-    left: -10rem;
-    width: auto;
+    /* left: -6rem; */
+    width: 100%;
+    height: auto;
   }
 
   .discover_name {
@@ -506,8 +510,42 @@ header {
     font-size: 1rem;
   }
 
+  .content {
+    padding: 0 0 2rem 0;
+  }
+
+  .marketplace_header h5 {
+    font-size: 1.2rem;
+  }
+
   .marketplace_section {
     flex-direction: column;
+  }
+
+  .division {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+
+  .division:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .division_img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .division_content {
+    padding: 2rem 0 0 0;
+  }
+
+  .division_content h6 {
+    font-size: 1.1rem;
+  }
+  .division_content h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
   }
 
   .from_recommdention_conversion {

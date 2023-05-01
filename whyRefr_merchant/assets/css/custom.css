@@ -718,6 +718,10 @@
   overflow: hidden !important;
 }
 
+.overflow-x {
+  overflow-x: hidden !important;
+}
+
 .purple_background {
   background-color: #874bf9 !important;
 }
