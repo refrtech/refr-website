@@ -178,16 +178,24 @@ header {
   padding: 12px 0 20px 0;
 }
 
-.img_header {
-  width: 500px;
-  height: 400px;
-  margin-left: auto;
+.section__hero {
+  width: 100%;
+  height: 423px;
+  position: relative;
 }
 
-.img_header img {
+.crossFade__image {
+  position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all 2s ease-in-out;
   object-fit: contain;
+}
+
+.crossFade__image--active {
+  opacity: 1;
 }
 
 .section_content {
@@ -234,13 +242,17 @@ header {
   justify-content: space-between;
 }
 
-.division:nth-child(even) {
+.division:nth-child(2) {
   padding: 0;
 }
 
 .division_img {
   width: 487px;
   height: auto;
+}
+
+.division_img2 {
+  margin-left: auto;
 }
 
 .division_img img {
@@ -283,6 +295,24 @@ header {
   padding: 0;
 }
 
+.from_recommdention_conversion {
+  width: 100%;
+  margin: 6rem auto;
+}
+
+.from_recommdention_conversion h3 {
+  font-size: 2.25rem;
+}
+
+.get_demo {
+  margin-top: 35px;
+}
+
+.get_demo a {
+  color: #ffffff;
+  padding: 10px 50px;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -300,6 +330,13 @@ header {
 }
 
 @media screen and (max-width: 1130px) {
+  .sideleft .me-4 img {
+    display: none;
+  }
+  .sideleft .me-4 svg {
+    display: block;
+    width: 80%;
+  }
   .active .fw {
     font-weight: 600 !important;
   }
@@ -346,6 +383,7 @@ header {
   }
   .openNav {
     display: block;
+    color: #fff;
   }
   .sideright {
     display: none;
@@ -409,6 +447,7 @@ header {
 
   header {
     padding: 20px 25px;
+    background-color: #000;
   }
 
   .dropdown_cc {
@@ -421,21 +460,40 @@ header {
   }
   /*e  */
 
+  .section_content {
+    padding: 2rem;
+  }
+
+  .bg_black_content {
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
   .heading_contents h1 {
     font-size: 1.5rem;
     text-align: center;
+    text-align: left;
   }
   .heading_contents p {
     text-align: center;
     font-size: 16px;
+    text-align: left;
+  }
+  .getdemo_lalign {
+    text-align: left !important;
   }
   .heading_contents div {
     text-align: center;
   }
-  .img_header {
-    width: 100%;
-    height: auto;
-    margin-top: 2rem;
+
+  .section__hero {
+    height: 210px;
+  }
+
+  .crossFade__image {
+    left: -10rem;
+    width: auto;
   }
 
   .discover_name {
@@ -446,5 +504,22 @@ header {
   }
   .discover_name p {
     font-size: 1rem;
+  }
+
+  .marketplace_section {
+    flex-direction: column;
+  }
+
+  .from_recommdention_conversion {
+    width: 100%;
+    margin: 2rem auto;
+  }
+  .from_recommdention_conversion h3 {
+    font-size: 1rem;
+  }
+
+  .get_demo a {
+    color: #ffffff;
+    padding: 14px 36px;
   }
 }

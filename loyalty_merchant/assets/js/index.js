@@ -7,7 +7,7 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-//asdasdasda
+//fadeimgs
 
 // Initialize crossFade functionality on the page
 function init_crossFade() {
