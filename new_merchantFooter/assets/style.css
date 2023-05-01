@@ -104,6 +104,11 @@ footer {
   gap: 2rem;
 }
 
+.footer_bottomSide {
+  display: flex;
+  gap: 1rem;
+}
+
 @media screen and (max-width: 1130px) {
   footer {
     padding: 2rem 0.5rem;
