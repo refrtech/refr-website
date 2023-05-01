@@ -228,6 +228,61 @@ header {
   font-size: 1.4rem;
 }
 
+.division {
+  padding: 8rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.division:nth-child(even) {
+  padding: 0;
+}
+
+.division_img {
+  width: 487px;
+  height: auto;
+}
+
+.division_img img {
+  width: 100%;
+  height: auto;
+}
+
+.division_content {
+  height: auto;
+  padding: 2rem 0;
+}
+
+.division_content h6 {
+  color: #777777;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.division_content h4 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.division_content ul {
+  padding: 1rem 0 0 0 !important;
+}
+
+.heightWdith {
+  height: auto !important;
+  width: 40%;
+}
+
+.division_content ul li {
+  display: flex;
+  gap: 1rem;
+  padding: 0 0 2rem 0;
+}
+
+.division_content ul li:last-child {
+  padding: 0;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
