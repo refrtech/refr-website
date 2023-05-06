@@ -741,3 +741,7 @@
 .pos_relative {
   position: relative;
 }
+
+.bg_purple {
+  background-color: #8111e8 !important;
+}

@@ -59,6 +59,7 @@ html {
 
 .drop_down_lists {
   display: flex;
+  padding: 2rem 1rem;
 }
 
 .dropdown_content {
@@ -280,11 +281,6 @@ header {
 .division_content ul {
   padding: 1rem 0 0 0 !important;
 }
-
-/* .heightWdith {
-  height: auto !important;
-  width: 40%;
-} */
 
 .division_content ul li {
   display: flex;

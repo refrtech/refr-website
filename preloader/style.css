@@ -1,0 +1,16 @@
+
+#preloader {
+    background: #ffffff url(./splash_withtext.gif) no-repeat center center;
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+  }
+
+
+@media screen and (max-width: 1130px) {
+  #preloader{
+    background-size: 50%;
+  }
+}
