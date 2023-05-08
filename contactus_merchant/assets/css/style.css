@@ -290,7 +290,7 @@ input::-webkit-inner-spin-button {
 }
 
 .custom-select option{
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .mail_number {
@@ -323,7 +323,7 @@ input::-webkit-inner-spin-button {
 
 .contact_mails {
     display: flex;
-    gap: 1rem;
+    gap: 0.8rem;
 }
 
 .tel_mail {
