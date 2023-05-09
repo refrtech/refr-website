@@ -741,3 +741,11 @@
 .pos_relative {
   position: relative;
 }
+
+.overflow_x_hidden{
+  overflow-x: hidden !important;
+}
+
+.overflow_y_hidden{
+  overflow-y: hidden !important;
+}

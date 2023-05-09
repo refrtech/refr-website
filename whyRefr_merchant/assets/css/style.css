@@ -23,7 +23,7 @@ html {
 }
 
 .dropdown-menu {
-  padding: 40px;
+  padding: 2rem 1rem !important;
   width: 1000px;
 }
 
@@ -74,6 +74,11 @@ html {
 
 .dc_m:last-child {
   padding-bottom: 0;
+}
+
+
+.dc_r h6{
+  color: #000000;
 }
 
 .dc_r p {
@@ -181,7 +186,7 @@ header {
 
 .section__hero {
   width: 100%;
-  height: 423px;
+  height: 550px;
   position: relative;
 }
 
@@ -191,7 +196,7 @@ header {
   height: 100%;
   top: 0;
   opacity: 0;
-  transition: all 2s ease-in-out;
+  /* transition: all 2s ease-in-out; */
   object-fit: contain;
 }
 
@@ -200,7 +205,7 @@ header {
 }
 
 .section_content {
-  padding: 4rem;
+  padding: 4rem 4rem 4rem 5rem;
 }
 
 .discover_name {
@@ -307,7 +312,7 @@ header {
 
 .get_demo a {
   color: #ffffff;
-  padding: 10px 50px;
+  padding: 10px 40px;
 }
 
 @media screen and (max-height: 450px) {
@@ -321,6 +326,8 @@ header {
 
 .sideleft .me-4 img {
   display: block;
+  max-width: 75px;
+  width: 100%;
 }
 .sideleft .me-4 svg {
   display: none;
@@ -455,6 +462,14 @@ header {
     font-size: 16px;
     display: none !important;
   }
+  .dropdown-menu {
+    border: none;
+  }
+
+  .dropdown-menu {
+    padding: 20px;
+    width: 100%;
+  }
   /*e  */
 
   .section_content {
@@ -553,7 +568,6 @@ header {
   }
 
   .get_demo a {
-    color: #ffffff;
-    padding: 14px 36px;
+    padding: 10px 30px;
   }
 }

@@ -34,6 +34,7 @@ footer {
 
 .c_A3 {
   color: #a39f90;
+  font-size: 0.875rem;
 }
 
 .c_74 {
@@ -51,7 +52,7 @@ footer {
 }
 
 .footer_heading h5 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   cursor: pointer;
   padding: 0 0 0.4rem 0;
 }
@@ -70,11 +71,11 @@ footer {
 }
 
 .footer_ul {
-  margin: 2rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .footer_ul ul li {
-  padding: 0 0 1rem 0;
+  padding: 8px 12px 8px 0;
 }
 
 .badge_list{
@@ -83,6 +84,7 @@ footer {
   font-weight: 600;
   font-size: 10px;
   padding: 10px;
+  color: #000000;
 }
 
 
@@ -91,21 +93,20 @@ footer {
 }
 
 .footer_followus {
-  margin: 3rem 0 0 0;
+  margin: 2rem 0 0 0;
 }
 
 .footer_followus h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0 0 1rem 0;
 }
 
 .footer_socialMedia ul {
   display: flex;
-  gap: 2rem;
 }
 
 .footer_bottompart {
-  margin: 5rem 0 0 0;
+  margin: 2rem 0 0 0;
 }
 
 .footer_bottompart ul {
@@ -118,12 +119,21 @@ footer {
   gap: 1rem;
 }
 
+.social_icon{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.social_icon svg{}
+
 @media screen and (max-width: 1130px) {
   footer {
     padding: 2rem 0.5rem;
   }
   .footer_W {
-    max-width: 40%;
+    max-width: 50%;
   }
 
   .footer_main {
@@ -168,5 +178,15 @@ footer {
 
   .footer_bottomSide li a {
     font-size: 12px !important;
+  }
+
+  .badge_list{
+    font-size: 6px;
+    padding: 5px;
+    display: none;
+  }
+
+  .footer_ul ul li a{
+    font-size: 14px;
   }
 }

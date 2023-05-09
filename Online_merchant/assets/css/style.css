@@ -1070,7 +1070,7 @@ header {
     /*  */
 
     .bg_gradient_text_clr {
-        height: 12px;
+        height: 9px;
     }
 
     .wholeSection {
@@ -1143,6 +1143,10 @@ header {
 
     .points {
         max-width: 100%;
+    }
+
+    .pntsIcons{
+        margin: 0 0 -7px 0;
     }
 
     .pntsText {
@@ -1234,21 +1238,34 @@ header {
     .runnDivisiom h4 {
         font-size: 1.2rem;
     }
+    .runnDivisiom p{
+        margin: 0;
+    }
 
     .theeSection {
         display: flex !important;
         flex-direction: column;
+        gap: 1rem;
     }
 
     .bigSec {
-        height: 300px;
+        height: 240px;
     }
 
     .cont_one h3 {
         font-size: 1rem;
+        line-height: inherit;
     }
 
-    .bigThree{
+    .content_foun{
+        bottom: 1rem;
+    }
+
+    .founder_st{
+        gap: 0.1rem;
+    }
+
+    .bigThree {
         padding: 20px;
     }
 
@@ -1262,7 +1279,7 @@ header {
         overflow-x: scroll;
     }
 
-    .founder_st p{
+    .founder_st p {
         font-size: 1rem;
     }
 
