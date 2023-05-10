@@ -1138,5 +1138,9 @@ header {
   .from_recommdention_conversion h3 {
     font-size: 1rem;
   }
+
+  .get_demo a {
+    padding: 10px 30px;
+  }
 }
 

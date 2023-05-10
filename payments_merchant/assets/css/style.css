@@ -744,4 +744,8 @@ header {
   .pf_heading p {
     height: auto;
   }
+  
+  .get_demo a {
+    padding: 10px 30px;
+  }
 }

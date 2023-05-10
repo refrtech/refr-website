@@ -299,7 +299,7 @@ header {
 
 /* flips s */
 
-.flippers{
+.flippers {
   margin: 4rem 0;
   display: flex;
   justify-content: space-between;
@@ -355,7 +355,7 @@ header {
   object-fit: contain;
 }
 
-.flip-card-front h5{
+.flip-card-front h5 {
   font-size: 1rem;
 }
 
@@ -573,7 +573,7 @@ header {
 }
 
 
-.sideleft .me-4 a{
+.sideleft .me-4 a {
   display: block;
   text-decoration: none;
 }
@@ -909,12 +909,6 @@ header {
     font-size: 1rem;
   }
 
-  .get_demo a {
-    color: #ffffff;
-    padding: 14px 36px;
-  }
-
-
   .translate_flex {
     padding: 2rem 0 3rem 0;
   }
@@ -943,23 +937,23 @@ header {
 
   /*  */
 
-  .flippers{
-   overflow: scroll;
-   gap: 13rem;
-   margin: 0;
-   padding: 1rem;
+  .flippers {
+    overflow: scroll;
+    gap: 13rem;
+    margin: 0;
+    padding: 1rem;
   }
 
-  .flippers::-webkit-scrollbar{
+  .flippers::-webkit-scrollbar {
     display: none;
   }
 
-  .flip-card{
+  .flip-card {
     width: fit-content;
     height: 200px;
   }
 
-  .flip-card-front{
+  .flip-card-front {
     width: 180px;
     height: 200px;
     background: white;
@@ -967,21 +961,20 @@ header {
     padding: 1rem;
   }
 
-  .flip-card-back{
+  .flip-card-back {
     width: 180px;
     height: 200px;
   }
 
-  .flip-card-inner{
+  .flip-card-inner {
     box-shadow: none;
   }
 
-  .flip-card-front h5{
+  .flip-card-front h5 {
     font-size: 0.9rem;
   }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(0deg);
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(0deg);
+  }
 }
-}
-
