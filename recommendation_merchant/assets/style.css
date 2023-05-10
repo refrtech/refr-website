@@ -720,6 +720,12 @@ header {
   }
 }
 
+
+.sideleft .me-4 a{
+  display: block;
+  text-decoration: none;
+}
+
 .sideleft .me-4 img {
   display: block;
   max-width: 75px;

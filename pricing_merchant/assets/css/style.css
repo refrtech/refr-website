@@ -23,7 +23,7 @@ html {
 }
 
 .dropdown-menu {
-  padding: 40px;
+  padding: 2rem 1rem !important;
   width: 1000px;
 }
 
@@ -38,8 +38,7 @@ html {
   content: "";
   height: 1em;
   margin-left: 0.25em;
-  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg)
-    no-repeat 50% 50%;
+  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg) no-repeat 50% 50%;
   -webkit-mask-size: cover;
   transition: opacity 0.12s ease, transform 0.3s cubic-bezier(0.66, 0, 0.34, 1);
   width: 1em;
@@ -59,7 +58,7 @@ html {
 
 .drop_down_lists {
   display: flex;
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
 }
 
 .dropdown_content {
@@ -74,6 +73,11 @@ html {
 
 .dc_m:last-child {
   padding-bottom: 0;
+}
+
+
+.dc_r h6 {
+  color: #000000;
 }
 
 .dc_r p {
@@ -119,6 +123,7 @@ header {
   align-items: end;
   margin: 0;
   gap: 1.5rem;
+  padding: 0;
 }
 
 .header_list li {
@@ -167,6 +172,7 @@ header {
 .sidenav a {
   display: none;
 }
+/*  */
 
 .pricing_div {
   padding: 10rem 0;
@@ -463,18 +469,12 @@ header {
   display: flex;
 }
 
-.btns.active {
-  background: #8111e8;
-  color: #ffffff;
-  border: none;
-}
-
 .btns {
   outline: none;
   border: none;
   border: 1px solid #000000;
   border-radius: 40px;
-  background: transparent;
+  background: #ffffff;
   width: 120px;
   height: 48px;
   margin: 0 1rem 0 0;
@@ -488,6 +488,14 @@ header {
   border: 1px solid #000000;
   outline: none;
 }
+
+
+.btns.active {
+  background: #8111e8;
+  color: #ffffff;
+  border: none;
+}
+
 
 .cards {
   display: flex;
@@ -681,13 +689,21 @@ header {
   }
 }
 
+.sideleft .me-4 a{
+  display: block;
+  text-decoration: none;
+}
+
 .sideleft .me-4 img {
   display: block;
+  max-width: 75px;
+  width: 100%;
 }
 
 .sideleft .me-4 svg {
   display: none;
 }
+
 
 .filterDiv {
   display: none;
@@ -916,6 +932,15 @@ header {
   .dropdown_secondary {
     font-size: 16px;
     display: none !important;
+  }
+
+  .dropdown-menu {
+    border: none;
+  }
+
+  .dropdown-menu {
+    padding: 20px;
+    width: 100%;
   }
 
   /*e  */
