@@ -70,7 +70,8 @@ html {
   content: "";
   height: 1em;
   margin-left: 0.25em;
-  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg) no-repeat 50% 50%;
+  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg)
+    no-repeat 50% 50%;
   -webkit-mask-size: cover;
   transition: opacity 0.12s ease, transform 0.3s cubic-bezier(0.66, 0, 0.34, 1);
   width: 1em;
@@ -106,7 +107,6 @@ html {
 .dc_m:last-child {
   padding-bottom: 0;
 }
-
 
 .dc_r h6 {
   color: #000000;
@@ -207,15 +207,12 @@ header {
 
 /*  */
 
-
-
 .section_content {
   padding: 4rem 4rem 4rem 5rem;
 }
 
 .heading_contents h1 {
   font-size: 50px;
-  font-weight: 600;
 }
 
 .heading_contents p {
@@ -234,7 +231,6 @@ header {
   height: 100%;
   object-fit: contain;
 }
-
 
 section {
   margin-top: 0;
@@ -368,6 +364,11 @@ section {
   padding: 14px 50px;
 }
 
+.gs_cs a {
+  font-size: 1.125rem;
+  padding: 14px 28px;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -377,7 +378,6 @@ section {
     font-size: 18px;
   }
 }
-
 
 .sideleft .me-4 a {
   display: block;
@@ -539,7 +539,6 @@ section {
 
   /*e  */
 
-
   .section_content {
     padding: 2rem;
   }
@@ -550,7 +549,7 @@ section {
     gap: 3.5rem;
   }
   .heading_contents h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
   }
   .heading_contents p {

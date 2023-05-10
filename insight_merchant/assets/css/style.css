@@ -70,7 +70,8 @@ html {
   content: "";
   height: 1em;
   margin-left: 0.25em;
-  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg) no-repeat 50% 50%;
+  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg)
+    no-repeat 50% 50%;
   -webkit-mask-size: cover;
   transition: opacity 0.12s ease, transform 0.3s cubic-bezier(0.66, 0, 0.34, 1);
   width: 1em;
@@ -106,7 +107,6 @@ html {
 .dc_m:last-child {
   padding-bottom: 0;
 }
-
 
 .dc_r h6 {
   color: #000000;
@@ -207,14 +207,17 @@ header {
 
 /*  */
 
-
 .section_content {
   padding: 4rem 4rem 4rem 5rem;
 }
 
 .heading_contents h1 {
   font-size: 50px;
-  font-weight: 600;
+}
+
+.getdemo_lalign a {
+  font-size: 1.125rem;
+  padding: 14px 28px;
 }
 
 .heading_contents p {
@@ -236,11 +239,11 @@ header {
 
 .discover_name {
   width: 80%;
-  margin: 4rem auto;
+  margin: 4rem auto 0 auto;
 }
 
 .discover_name h1 {
-  font-size: 3.5rem;
+  font-size: 2.75rem;
 }
 
 .discover_name p {
@@ -252,11 +255,14 @@ header {
 }
 
 .content1 {
-  margin-bottom: 6rem;
+  width: 90%;
+  margin: 0 auto 8rem auto;
 }
 
 .content2 {
-  margin-bottom: 6rem;
+  width: 90%;
+  margin: 0 auto 8rem auto;
+  flex-direction: row-reverse;
 }
 
 .content_img {
@@ -291,11 +297,11 @@ header {
 }
 
 .content_text h3 {
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 .content_text p {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .video_sectiom {
@@ -311,6 +317,15 @@ header {
 
 .video-js .vjs-tech {
   object-fit: contain;
+}
+
+.video-js .vjs-tech {
+  position: absolute;
+  top: 0;
+  left: 0 !important;
+  width: 54vw !important;
+  height: 54vw !important;
+  margin: -12rem 0 0 0 !important;
 }
 
 .title_case h3 {
@@ -429,7 +444,6 @@ header {
   }
 }
 
-
 .sideleft .me-4 a {
   display: block;
   text-decoration: none;
@@ -444,7 +458,6 @@ header {
 .sideleft .me-4 svg {
   display: none;
 }
-
 
 @media screen and (max-width: 1130px) {
   .sideleft .me-4 img {
@@ -591,7 +604,6 @@ header {
 
   /*e  */
 
-
   .section_content {
     padding: 2rem;
   }
@@ -606,14 +618,26 @@ header {
     gap: 1.5rem;
   }
 
+  .getdemo_lalign a {
+    font-size: 1rem;
+  }
+
   .heading_contents h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
   }
 
   .heading_contents p {
     text-align: center;
-    font-size: 16px;
+    font-size: 17px;
+  }
+
+  .content_text p {
+    text-align: center;
+  }
+
+  .contents {
+    overflow-x: hidden;
   }
 
   .heading_contents div {
@@ -639,17 +663,15 @@ header {
   }
 
   .content1 {
-    margin-bottom: 3rem;
-  }
-
-  .content2 {
-    margin-bottom: 3rem;
-  }
-
-  .content1 {
     flex-direction: column;
     width: 100%;
     gap: 4rem;
+    margin-bottom: 0rem;
+    overflow-x: hidden;
+  }
+
+  .content1:last-child {
+    margin-bottom: 6rem;
   }
 
   .content_img {
@@ -670,7 +692,7 @@ header {
   }
 
   .content_text h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 100%;
     text-align: center;
   }
@@ -678,7 +700,9 @@ header {
   .content2 {
     flex-direction: column !important;
     width: 100%;
-    gap: 3rem;
+    gap: 0rem;
+    margin-bottom: 6rem;
+    overflow-x: hidden;
   }
 
   .title_case {
@@ -708,6 +732,13 @@ header {
   .casestudy_img img {
     border-radius: 10px;
     object-fit: cover;
+  }
+
+  .video-js .vjs-tech {
+    width: 100% !important;
+    height: 100% !important;
+
+    margin: 0 !important;
   }
 
   .padding_b-none {
@@ -751,5 +782,9 @@ header {
 
   .become_partner {
     font-size: 20px !important;
+  }
+
+  .get_demo a {
+    padding: 10px 30px;
   }
 }
