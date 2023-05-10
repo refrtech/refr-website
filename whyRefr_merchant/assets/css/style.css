@@ -76,8 +76,7 @@ html {
   padding-bottom: 0;
 }
 
-
-.dc_r h6{
+.dc_r h6 {
   color: #000000;
 }
 
@@ -182,6 +181,11 @@ header {
 .heading_contents p {
   font-size: 18px;
   padding: 12px 0 20px 0;
+}
+
+.getdemo_lalign a {
+  font-size: 1.125rem;
+  padding: 14px 28px;
 }
 
 .section__hero {
@@ -324,8 +328,7 @@ header {
   }
 }
 
-
-.sideleft .me-4 a{
+.sideleft .me-4 a {
   display: block;
   text-decoration: none;
 }
@@ -515,6 +518,10 @@ header {
     /* left: -6rem; */
     width: 100%;
     height: auto;
+  }
+
+  .getdemo_lalign a {
+    font-size: 1rem;
   }
 
   .discover_name {

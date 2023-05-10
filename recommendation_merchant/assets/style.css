@@ -54,8 +54,6 @@ html {
   color: #b6b6b6;
 }
 
-
-
 .dropdown-menu {
   padding: 2rem 1rem !important;
   width: 1000px;
@@ -72,7 +70,8 @@ html {
   content: "";
   height: 1em;
   margin-left: 0.25em;
-  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg) no-repeat 50% 50%;
+  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg)
+    no-repeat 50% 50%;
   -webkit-mask-size: cover;
   transition: opacity 0.12s ease, transform 0.3s cubic-bezier(0.66, 0, 0.34, 1);
   width: 1em;
@@ -218,7 +217,6 @@ header {
   padding: 12px 0 20px 0;
 }
 
-
 .img_header {
   width: 550px;
   height: 550px;
@@ -231,6 +229,10 @@ header {
   object-fit: contain;
 }
 
+.getdemo_lalign a {
+  font-size: 1.125rem;
+  padding: 14px 28px;
+}
 
 /* social links */
 
@@ -255,13 +257,12 @@ header {
 
 .social_hover img:hover {
   opacity: 1;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .section_content {
   padding: 4rem 4rem 4rem 5rem;
 }
-
 
 .video-js {
   width: 600px;
@@ -506,9 +507,11 @@ header {
   height: 0.65rem;
   cursor: pointer;
   animate: 0.2s;
-  background: linear-gradient(90deg,
-      #874bf9 var(--range-progress),
-      #dee4ec var(--range-progress));
+  background: linear-gradient(
+    90deg,
+    #874bf9 var(--range-progress),
+    #dee4ec var(--range-progress)
+  );
   border-radius: 1rem;
 }
 
@@ -709,7 +712,6 @@ header {
   padding: 10px 40px;
 }
 
-
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -720,8 +722,7 @@ header {
   }
 }
 
-
-.sideleft .me-4 a{
+.sideleft .me-4 a {
   display: block;
   text-decoration: none;
 }
@@ -880,6 +881,10 @@ header {
   }
 
   /*e  */
+
+  .getdemo_lalign a {
+    font-size: 1rem;
+  }
   .content_img img {
     object-fit: cover;
     height: auto;
@@ -1002,7 +1007,6 @@ header {
     height: auto;
     margin-top: 2rem;
   }
-
 
   .video-js {
     width: 100%;
@@ -1262,12 +1266,7 @@ header {
   }
 }
 
-
-
-
 @media screen and (max-width: 1130px) {
-
-
   .testimonial_img {
     height: 260px;
   }

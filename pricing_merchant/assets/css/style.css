@@ -38,7 +38,8 @@ html {
   content: "";
   height: 1em;
   margin-left: 0.25em;
-  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg) no-repeat 50% 50%;
+  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg)
+    no-repeat 50% 50%;
   -webkit-mask-size: cover;
   transition: opacity 0.12s ease, transform 0.3s cubic-bezier(0.66, 0, 0.34, 1);
   width: 1em;
@@ -74,7 +75,6 @@ html {
 .dc_m:last-child {
   padding-bottom: 0;
 }
-
 
 .dc_r h6 {
   color: #000000;
@@ -172,6 +172,7 @@ header {
 .sidenav a {
   display: none;
 }
+
 /*  */
 
 .pricing_div {
@@ -489,13 +490,11 @@ header {
   outline: none;
 }
 
-
 .btns.active {
   background: #8111e8;
   color: #ffffff;
   border: none;
 }
-
 
 .cards {
   display: flex;
@@ -579,12 +578,14 @@ header {
   align-items: end;
 }
 
-.plan_division button {
+.plan_division a {
   border: 1px solid #000000;
   padding: 10px 24px;
   border-radius: 40px;
   background: transparent;
   width: fit-content;
+  display: block;
+  color: #000000;
 }
 
 .title_case {
@@ -689,7 +690,7 @@ header {
   }
 }
 
-.sideleft .me-4 a{
+.sideleft .me-4 a {
   display: block;
   text-decoration: none;
 }
@@ -703,7 +704,6 @@ header {
 .sideleft .me-4 svg {
   display: none;
 }
-
 
 .filterDiv {
   display: none;
@@ -747,6 +747,7 @@ header {
   background: #f7efff;
   border-radius: 20px;
   padding: 50px;
+  margin: 0 0 7rem 0;
 }
 
 .procressingfee_header h4 {
@@ -789,6 +790,27 @@ header {
 .get_demo a {
   color: #ffffff;
   padding: 10px 40px;
+}
+
+.get_demo2 {
+  margin: 3rem 0 0 0;
+  text-align: center;
+}
+
+.get_demo2 a {
+  padding: 14px 40px;
+  background-color: #8100e9;
+  color: white;
+}
+
+.ads_expertise {
+  margin: 0 auto 7rem auto;
+  max-width: 85%;
+}
+
+.ads_expertise h1 {
+  font-size: 2.1rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 1130px) {
@@ -950,12 +972,12 @@ header {
   }
 
   .pricing_div h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 0 0 1.4rem 0;
   }
 
   .pricing_div p {
-    font-size: 0.8rem;
+    font-size: 1.125rem;
   }
 
   .input_cta {
@@ -963,7 +985,7 @@ header {
     flex-direction: column;
     border: none;
     border-radius: 0;
-    gap: 1.5rem;
+    gap: 14px;
   }
 
   .input_cta input {
@@ -975,6 +997,10 @@ header {
 
   .get_free_demo {
     width: 100%;
+  }
+
+  .inputD_text {
+    font-size: 0.75rem !important;
   }
 
   .get_free_demo button {
@@ -1052,7 +1078,7 @@ header {
 
   .select_buss_boxes {
     width: 100%;
-    margin: 0 0 2rem 0;
+    margin: 0 0 1rem 0;
   }
 
   .select_buss_boxes h4 {
@@ -1073,6 +1099,18 @@ header {
     padding: 0 0 1rem 0rem;
   }
 
+  .pricing_division h5 {
+    font-size: 1.5rem;
+  }
+
+  .pricing_plan p {
+    font-size: 1.5rem;
+  }
+
+  .tick_para:last-child {
+    padding: 0 0 1rem 0;
+  }
+
   .tick_para p {
     font-size: 1rem;
   }
@@ -1083,6 +1121,7 @@ header {
 
   .processingfess_section {
     padding: 3rem 2rem;
+    border-radius: 0;
   }
 
   .pf_heading h3 {
@@ -1100,6 +1139,7 @@ header {
 
   .pf_heading p {
     height: auto;
+    min-height: -webkit-fill-available;
   }
 
   .accordion {
@@ -1142,5 +1182,16 @@ header {
   .get_demo a {
     padding: 10px 30px;
   }
-}
 
+  .get_demo2 {
+    padding: 10px 30px;
+  }
+
+  .ads_expertise {
+    width: 100%;
+  }
+
+  .ads_expertise h1 {
+    font-size: 1.25;
+  }
+}

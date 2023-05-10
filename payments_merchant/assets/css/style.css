@@ -70,7 +70,8 @@ html {
   content: "";
   height: 1em;
   margin-left: 0.25em;
-  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg) no-repeat 50% 50%;
+  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg)
+    no-repeat 50% 50%;
   -webkit-mask-size: cover;
   transition: opacity 0.12s ease, transform 0.3s cubic-bezier(0.66, 0, 0.34, 1);
   width: 1em;
@@ -106,7 +107,6 @@ html {
 .dc_m:last-child {
   padding-bottom: 0;
 }
-
 
 .dc_r h6 {
   color: #000000;
@@ -216,7 +216,7 @@ header {
 }
 
 .discover_name h1 {
-  font-size: 2.5rem;
+  font-size: 3.1rem;
 }
 
 .discover_name p {
@@ -230,6 +230,11 @@ header {
 .heading_contents p {
   font-size: 18px;
   padding: 12px 0 20px 0;
+}
+
+.getdemo_lalign a {
+  font-size: 1.125rem;
+  padding: 14px 28px;
 }
 
 .img_header {
@@ -249,10 +254,13 @@ header {
 }
 
 .content1 {
-  margin-bottom: 6rem;
+  width: 90%;
+  margin: 0 auto 8rem auto;
 }
 .content2 {
-  margin-bottom: 6rem;
+  width: 90%;
+  margin: 0 auto 8rem auto;
+  flex-direction: row-reverse;
 }
 
 .content_img {
@@ -287,7 +295,7 @@ header {
 }
 
 .content_text h3 {
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 .title_case h3 {
@@ -391,7 +399,7 @@ header {
 
 .get_demo a {
   color: #ffffff;
-  padding: 10px 40px;
+  padding: 14px 28px;
 }
 
 .processingfess_section {
@@ -432,8 +440,7 @@ header {
   }
 }
 
-
-.sideleft .me-4 a{
+.sideleft .me-4 a {
   display: block;
   text-decoration: none;
 }
@@ -614,6 +621,10 @@ header {
     text-align: center;
   }
 
+  .getdemo_lalign a {
+    font-size: 1rem;
+  }
+
   .img_header {
     width: 100%;
     height: auto;
@@ -695,8 +706,8 @@ header {
 
   .content1 {
     flex-direction: column;
-    margin-bottom: 1rem;
-    gap: 1rem;
+    margin-bottom: 4rem;
+    gap: 2rem;
   }
 
   .content_img {
@@ -709,7 +720,7 @@ header {
   }
 
   .content_text h3 {
-    font-size: 2rem;
+    font-size: 1.3rem;
     text-align: center;
   }
 
@@ -730,6 +741,7 @@ header {
 
   .processingfess_section {
     padding: 20px;
+    border-radius: 0;
   }
 
   .pf_contents {
@@ -743,8 +755,9 @@ header {
 
   .pf_heading p {
     height: auto;
+    min-height: -webkit-fill-available;
   }
-  
+
   .get_demo a {
     padding: 10px 30px;
   }

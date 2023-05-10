@@ -60,7 +60,7 @@ html {
 }
 
 .dropdown-menu {
-    padding: 40px;
+    padding: 2rem 1rem !important;
     width: 1000px;
 }
 
@@ -95,7 +95,7 @@ html {
 
 .drop_down_lists {
     display: flex;
-    padding: 2rem 1rem;
+    /* padding: 2rem 1rem; */
 }
 
 .dropdown_content {
@@ -106,12 +106,15 @@ html {
     display: flex;
     gap: 1.4rem;
     padding-bottom: 20px;
-    color: #000000;
-    cursor: pointer;
 }
 
 .dc_m:last-child {
     padding-bottom: 0;
+}
+
+
+.dc_r h6 {
+    color: #000000;
 }
 
 .dc_r p {
@@ -827,6 +830,7 @@ header {
 }
 
 
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -837,14 +841,21 @@ header {
     }
 }
 
+
+.sideleft .me-4 a {
+    display: block;
+    text-decoration: none;
+}
+
 .sideleft .me-4 img {
     display: block;
+    max-width: 75px;
+    width: 100%;
 }
 
 .sideleft .me-4 svg {
     display: none;
 }
-
 
 @media screen and (max-width: 1130px) {
     .sideleft .me-4 img {
@@ -988,6 +999,16 @@ header {
         font-size: 16px;
         display: none !important;
     }
+
+    .dropdown-menu {
+        border: none;
+    }
+
+    .dropdown-menu {
+        padding: 20px;
+        width: 100%;
+    }
+    /*  */
 
     .title_section {
         width: 100%;
