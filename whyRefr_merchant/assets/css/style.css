@@ -439,7 +439,7 @@ header {
 
   .sideleft .me-4 svg {
     display: block;
-    width: 68%;
+    /* width: 68%; */
   }
 
   .active .fw {
@@ -587,6 +587,14 @@ header {
   }
 
   /*e  */
+
+  .bg_black{
+    margin: -1px 0 0 0;
+  }
+
+  .bg_black{
+    margin: -1px 0 0 0;
+  }
 
   .section_content {
     padding: 2rem 1rem 0 1rem;
