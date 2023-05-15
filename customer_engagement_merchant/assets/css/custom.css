@@ -733,3 +733,7 @@
 .bg_purple_gradient {
   background: linear-gradient(0deg, #843ac8, #843ac8);
 }
+
+.overflow_x_hidden{
+  overflow-x: hidden;
+}

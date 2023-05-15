@@ -24,15 +24,43 @@ html {
 }
 
 
+.dropdown_header h4{
+  font-size: 18px;
+  font-weight: 600;
+}
 
 .dropdown-menu {
-  padding: 2rem 1rem !important;
+  padding: 1rem !important;
   width: 1000px;
 }
+
+.dropdown_content_svg{
+  width: 24px;
+  height: 24px;
+}
+
+
+.dropdown_content_svg svg{
+  width: 24px;
+  height: 24px;
+}
+
 
 .dropdown-item span {
   display: flex;
   align-items: center;
+  font-size: 16px;
+  padding: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.custom_font{
+  font-size: 14px !important;
+}
+
+
+.dropdown_text{
+  font-size: 12px;
 }
 
 .dropdown-item span::after {
@@ -57,7 +85,7 @@ html {
 
 .dropd_w {
   padding: 30px;
-  width: 500px;
+  width: auto;
 }
 
 .drop_down_lists {
@@ -66,13 +94,13 @@ html {
 }
 
 .dropdown_content {
-  margin: 2.5rem 0;
+  margin: 1rem 0;
 }
 
 .dc_m {
   display: flex;
-  gap: 1.4rem;
-  padding-bottom: 20px;
+  gap: 1rem;
+  padding-bottom: 8px;
   text-decoration: none;
 }
 
@@ -82,10 +110,12 @@ html {
 
 .dc_r h6{
   color: #000000;
+  font-size: 16px;
 }
 
 .dc_r p {
   color: #8e8e8e;
+  font-size: 12px;
 }
 
 .dd_img {
@@ -108,6 +138,11 @@ html {
   outline: none;
   border: none;
   padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
 }
 
 header {
@@ -139,6 +174,7 @@ header {
   text-decoration: none;
   font-size: 1rem;
   text-transform: capitalize;
+  padding: 0;
 }
 
 .sideright {
@@ -159,6 +195,7 @@ header {
   display: flex;
   align-items: center;
   padding: 0 18px;
+  border-radius: 50px;
 }
 
 .closebtn {
@@ -331,6 +368,11 @@ header {
   margin-top: -3rem !important;
 }
 
+.core_text a{
+ display: flex;
+ align-items: center;
+}
+
 .videoFile video {
   width: 100% !important;
   height: auto;
@@ -400,7 +442,7 @@ header {
 }
 
 .refrContent{
-  font-size: 2rem;
+  font-size: 1.875rem;
     line-height: normal;
     text-align: left;
     padding: 4rem 0;
@@ -461,7 +503,7 @@ header {
 
 .get_demoa a {
   color: #ffffff;
-  padding: 14px 50px;
+  padding: 10px 40px;
   text-decoration: none;
 }
 
@@ -472,11 +514,11 @@ header {
 
 .from_recommdention_conversion {
   width: 100%;
-  margin: 6rem auto;
+  padding: 6rem 0;
 }
 
 .from_recommdention_conversion h3 {
-  font-size: 2.25rem;
+  font-size: 1.875rem;
 }
 
 /* media queries and animation  */
@@ -934,7 +976,7 @@ header {
   }
 
   .animate_text {
-    font-size: 16px !important;
+    font-size: 18px !important;
     text-align: left;
   }
 

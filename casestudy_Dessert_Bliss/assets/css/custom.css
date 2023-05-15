@@ -126,10 +126,6 @@
   border: 1px solid #000000;
 }
 
-.A_border_white {
-  border: 1px solid #ffffff;
-}
-
 .outline_none {
   outline: none !important;
 }
@@ -233,6 +229,10 @@
 
 .A5padding {
   padding: 5px !important;
+}
+
+.A6padding {
+  padding: 6px !important;
 }
 
 .lr5padding {
@@ -639,7 +639,7 @@
 }
 
 .purple_txt {
-  color: #874bf9;
+  color: #874bf9 ;
 }
 
 .red_txt {
@@ -736,4 +736,12 @@
 
 .bg_purple_gradient {
   background: linear-gradient(0deg, #843ac8, #843ac8);
+}
+
+.pos_relative {
+  position: relative;
+}
+
+.bg_purple {
+  background-color: #8111e8 !important;
 }

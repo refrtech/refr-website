@@ -745,3 +745,7 @@
 .bg_purple {
   background-color: #8111e8 !important;
 }
+
+.overflow-x_hidden{
+  overflow-x: hidden;  
+}

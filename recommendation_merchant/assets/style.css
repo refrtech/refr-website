@@ -54,14 +54,43 @@ html {
   color: #b6b6b6;
 }
 
+.dropdown_header h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .dropdown-menu {
-  padding: 2rem 1rem !important;
+  padding: 1rem !important;
   width: 1000px;
 }
+
+.dropdown_content_svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+.dropdown_content_svg svg {
+  width: 24px;
+  height: 24px;
+}
+
 
 .dropdown-item span {
   display: flex;
   align-items: center;
+  font-size: 16px;
+  padding: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.custom_font {
+  font-size: 14px !important;
+}
+
+
+.dropdown_text {
+  font-size: 12px;
 }
 
 .dropdown-item span::after {
@@ -70,8 +99,7 @@ html {
   content: "";
   height: 1em;
   margin-left: 0.25em;
-  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg)
-    no-repeat 50% 50%;
+  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg) no-repeat 50% 50%;
   -webkit-mask-size: cover;
   transition: opacity 0.12s ease, transform 0.3s cubic-bezier(0.66, 0, 0.34, 1);
   width: 1em;
@@ -86,7 +114,7 @@ html {
 
 .dropd_w {
   padding: 30px;
-  width: 500px;
+  width: auto;
 }
 
 .drop_down_lists {
@@ -95,13 +123,13 @@ html {
 }
 
 .dropdown_content {
-  margin: 2.5rem 0;
+  margin: 1rem 0;
 }
 
 .dc_m {
   display: flex;
-  gap: 1.4rem;
-  padding-bottom: 20px;
+  gap: 1rem;
+  padding-bottom: 8px;
   text-decoration: none;
 }
 
@@ -111,10 +139,12 @@ html {
 
 .dc_r h6 {
   color: #000000;
+  font-size: 16px;
 }
 
 .dc_r p {
   color: #8e8e8e;
+  font-size: 12px;
 }
 
 .dd_img {
@@ -137,6 +167,11 @@ html {
   outline: none;
   border: none;
   padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
 }
 
 header {
@@ -168,6 +203,7 @@ header {
   text-decoration: none;
   font-size: 1rem;
   text-transform: capitalize;
+  padding: 0;
 }
 
 .sideright {
@@ -188,6 +224,7 @@ header {
   display: flex;
   align-items: center;
   padding: 0 18px;
+  border-radius: 50px;
 }
 
 .closebtn {
@@ -254,6 +291,7 @@ header {
   width: 100%;
   object-fit: contain;
 }
+
 
 .social_hover img:hover {
   opacity: 1;
@@ -378,8 +416,9 @@ header {
 
 .recommendation_img img {
   width: 100%;
-  height: 100%;
+  height: -webkit-fill-available;
   object-fit: contain;
+  margin: 0 0 0rem 4.3rem;
 }
 
 .recommendation_img1 {
@@ -507,11 +546,9 @@ header {
   height: 0.65rem;
   cursor: pointer;
   animate: 0.2s;
-  background: linear-gradient(
-    90deg,
-    #874bf9 var(--range-progress),
-    #dee4ec var(--range-progress)
-  );
+  background: linear-gradient(90deg,
+      #874bf9 var(--range-progress),
+      #dee4ec var(--range-progress));
   border-radius: 1rem;
 }
 
@@ -613,7 +650,7 @@ header {
 .titleCase_imgs {
   margin: 2rem 0 6rem 0;
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-between;
 }
 
 .casestudy_img {
@@ -694,15 +731,6 @@ header {
   font-size: 30px;
 }
 
-.from_recommdention_conversion {
-  width: 100%;
-  margin: 6rem auto;
-}
-
-.from_recommdention_conversion h3 {
-  font-size: 2.25rem;
-}
-
 .get_demo {
   margin-top: 35px;
 }
@@ -710,7 +738,21 @@ header {
 .get_demo a {
   color: #ffffff;
   padding: 10px 40px;
+  text-decoration: none;
 }
+
+
+.from_recommdention_conversion {
+  width: 100%;
+  padding: 6rem 0;
+}
+
+.from_recommdention_conversion h3 {
+  font-size: 1.875rem;
+}
+
+/* media queries and animation  */
+
 
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -721,6 +763,7 @@ header {
     font-size: 18px;
   }
 }
+
 
 .sideleft .me-4 a {
   display: block;
@@ -736,30 +779,51 @@ header {
 .sideleft .me-4 svg {
   display: none;
 }
+.for_r{
+  font-size: 14px;
+}
 
 @media screen and (max-width: 1130px) {
+ 
+  .for_r{
+    font-size: 12px ;
+  }
+  
+  .get_app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 0 0 0;
+  }
+
+  .logo_business {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .get_the_app a {
+    border: 1px solid #8111E8;
+    border-radius: 6px;
+    padding: 6px 16px !important;
+  }
   .sideleft .me-4 img {
     display: none;
   }
-
   .sideleft .me-4 svg {
     display: block;
-    width: 80%;
+    width: 68%;
   }
-
   .active .fw {
     font-weight: 600 !important;
   }
-
   .active .rotate {
     transform: rotate(0deg);
     transition-duration: 0.3s;
   }
-
   .active .rotate {
     transform: rotate(180deg);
   }
-
   .sidebar li .submenu {
     list-style: none;
     margin: 0;
@@ -767,7 +831,6 @@ header {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-
   .sidenav a:hover {
     color: #000;
   }
@@ -777,10 +840,20 @@ header {
   }
 
   .nav-item:nth-child(6) {
-    margin: 1rem 0;
-    padding: 1rem 0;
+    margin: 0;
+    padding: 8px 0;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
+    font-size: 14px !important;
+  }
+  .nav-item a:nth-child(7) {
+    padding: 6px 10px;
+    height: -webkit-fill-available;
+    max-width: 30%;
+  }
+
+  .headerIconsRes{
+    width: 14%;
   }
 
   .login_cta a {
@@ -792,24 +865,19 @@ header {
     height: 44px;
     text-align: center;
   }
-
   .header1 .ms-5 {
     margin-left: 0 !important;
   }
-
   .openNav {
     display: block;
-    color: #fff;
+    color: #ffffff;
   }
-
   .sideright {
     display: none;
   }
-
   .header_list {
     display: none;
   }
-
   .sidenav {
     height: 100%;
     width: 0;
@@ -822,11 +890,9 @@ header {
     transition: 0.5s;
     padding-top: 40px;
   }
-
   .sidenav {
     display: block;
   }
-
   .sidenav li {
     list-style-type: none;
   }
@@ -867,7 +933,7 @@ header {
   }
 
   header {
-    padding: 20px 25px;
+    padding: 10px 25px;
     background-color: #000;
   }
 
@@ -880,11 +946,14 @@ header {
     display: none !important;
   }
 
+
   /*e  */
 
   .getdemo_lalign a {
     font-size: 1rem;
+    padding: 10px 20px;
   }
+
   .content_img img {
     object-fit: cover;
     height: auto;
@@ -975,7 +1044,7 @@ header {
   .bg_black_content {
     align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 8px;
   }
 
   .section_content {
@@ -983,19 +1052,23 @@ header {
   }
 
   .heading_contents h1 {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     text-align: center;
-    text-align: left;
+    text-align: center;
+  }
+
+  .recommendation_img img{
+    margin: 0;
   }
 
   .heading_contents p {
     text-align: center;
-    font-size: 16px;
-    text-align: left;
+    font-size: 15px;
+    text-align: center;
   }
 
   .getdemo_lalign {
-    text-align: left !important;
+    text-align: center !important;
   }
 
   .heading_contents div {
@@ -1036,6 +1109,7 @@ header {
     flex-direction: column;
     margin-bottom: 4rem;
     gap: 2rem;
+    width: 100%;
   }
 
   .content_img {
@@ -1095,7 +1169,7 @@ header {
   }
 
   .c_1:last-child {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
   }
 
   .c_1 h5 {
@@ -1137,6 +1211,8 @@ header {
 
   .budget_container {
     flex-direction: column;
+    margin: 3rem 10px 10px 10px;
+    border-radius: 10px;
   }
 
   .budget_heading h4 {
@@ -1190,6 +1266,7 @@ header {
     overflow-x: scroll;
     overflow-y: hidden;
     margin: 1rem 0;
+    gap: 1rem;
   }
 
   .titleCase_imgs::-webkit-scrollbar {

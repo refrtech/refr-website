@@ -84,4 +84,5 @@ document.addEventListener("DOMContentLoaded", function () {
 // for changing imgs on text
 function changeImage(imgchanger){
   document.getElementById('slider').src = imgchanger;
+
 }
