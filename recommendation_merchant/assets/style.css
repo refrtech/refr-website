@@ -795,18 +795,21 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 6rem 0 0 0;
+    border: 1px solid red;
   }
 
   .logo_business {
     display: flex;
     align-items: center;
     gap: 1rem;
+    border: 1px solid green;
   }
 
   .get_the_app a {
     border: 1px solid #8111E8;
     border-radius: 6px;
     padding: 6px 16px !important;
+    border: 1px solid blue;
   }
 
   .sideleft .me-4 img {
@@ -875,9 +878,13 @@ header {
     background: #8100e9;
     border-radius: 22px;
     color: #ffffff !important;
-    width: 124px !important;
-    height: 44px;
+    width: 93px !important;
+    height: 38px;
     text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
   }
 
   .header1 .ms-5 {
@@ -1062,6 +1069,10 @@ header {
     margin-left: -25px;
   }
 
+  .bg_black{
+    margin: -1px 0 0 0;
+  }
+
   .bg_black_content {
     align-items: center;
     flex-direction: column;
@@ -1069,7 +1080,7 @@ header {
   }
 
   .section_content {
-    padding: 2rem;
+    padding: 2rem 1rem 0 1rem;
   }
 
   .heading_contents h1 {

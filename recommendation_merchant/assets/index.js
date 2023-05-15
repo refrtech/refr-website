@@ -84,5 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // for changing imgs on text
 function changeImage(imgchanger){
   document.getElementById('slider').src = imgchanger;
+  document.getElementsByClassName('SocialLogo').style.opacity = "1";
+  console.log(document.getElementsByClassName('SocialLogo'));
 
 }
