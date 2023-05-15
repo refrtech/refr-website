@@ -485,6 +485,7 @@ header {
 
 .for_r {
   font-size: 14px;
+  padding: 5px;
 }
 
 
@@ -581,6 +582,7 @@ header {
 
   .header1 .ms-5 {
     margin-left: 0 !important;
+    gap: 0 !important;
   }
 
   .openNav {

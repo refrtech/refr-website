@@ -42,9 +42,9 @@ html {
   max-width: 100%;
 }
 
-.row1:last-child {
+/* .row1:last-child {
   padding-bottom: 0 !important;
-}
+} */
 
 .bg_e4 {
   background: #e4e4e4;
@@ -54,14 +54,45 @@ html {
   color: #b6b6b6;
 }
 
-.dropdown-menu {
-  padding: 2rem 1rem !important;
-  width: 1000px;
+.dropdown_header h4 {
+  font-size: 18px;
+  font-weight: 600;
 }
+
+.dropdown-menu {
+  padding: 1rem !important;
+  width: 1000px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
+  border: none;
+}
+
+.dropdown_content_svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+.dropdown_content_svg svg {
+  width: 24px;
+  height: 24px;
+}
+
 
 .dropdown-item span {
   display: flex;
   align-items: center;
+  font-size: 16px;
+  padding: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.custom_font {
+  font-size: 14px !important;
+}
+
+
+.dropdown_text {
+  font-size: 12px;
 }
 
 .dropdown-item span::after {
@@ -85,7 +116,7 @@ html {
 
 .dropd_w {
   padding: 30px;
-  width: 500px;
+  width: auto;
 }
 
 .drop_down_lists {
@@ -94,26 +125,28 @@ html {
 }
 
 .dropdown_content {
-  margin: 2.5rem 0;
+  margin: 1rem 0;
 }
 
 .dc_m {
   display: flex;
-  gap: 1.4rem;
-  padding-bottom: 20px;
+  gap: 1rem;
+  padding-bottom: 8px;
+  text-decoration: none;
 }
 
 .dc_m:last-child {
   padding-bottom: 0;
 }
 
-
 .dc_r h6 {
   color: #000000;
+  font-size: 16px;
 }
 
 .dc_r p {
   color: #8e8e8e;
+  font-size: 12px;
 }
 
 .dd_img {
@@ -136,6 +169,11 @@ html {
   outline: none;
   border: none;
   padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
 }
 
 header {
@@ -167,6 +205,7 @@ header {
   text-decoration: none;
   font-size: 1rem;
   text-transform: capitalize;
+  padding: 0;
 }
 
 .sideright {
@@ -187,6 +226,7 @@ header {
   display: flex;
   align-items: center;
   padding: 0 18px;
+  border-radius: 50px;
 }
 
 .closebtn {
@@ -214,11 +254,10 @@ header {
 
 .heading_contents h1 {
   font-size: 50px;
-  font-weight: 600;
 }
 
 .heading_contents p {
-  font-size: 16px;
+  font-size: 18px;
   padding: 12px 0 20px 0;
 }
 
@@ -234,6 +273,16 @@ header {
   object-fit: contain;
 }
 
+
+.getdemo_lalign {
+  font-size: 1.125rem;
+  padding: 14px 28px;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  margin: 0;
+}
+
 .discover_name h1 {
   font-size: 2.5rem;
 }
@@ -245,7 +294,7 @@ header {
 .translate_flex {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 0 3rem 0;
+  padding: 4rem 0;
 }
 
 .transalate {
@@ -374,15 +423,35 @@ header {
 
 
 
+.schedule_connect {
+  text-align: center;
+  padding: 0 0 2rem 0;
+}
 
 
-.schedule_meeting a {
+.schedule_connect .h1 {
+  font-size: 1.25rem;
+  margin: 0 0 1rem 0;
+}
+
+.schedule_connect a {
+  color: #8100e8;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.schedule_meeting {
   text-decoration: underline !important;
 }
 
 
 .recommend_txt {
-  margin-bottom: 4rem;
+  margin: 4rem 0;
+}
+
+.recommendation_content {
+  width: 90%;
+  margin: auto;
 }
 
 .recommend_txt h6 {
@@ -459,7 +528,7 @@ header {
 .titleCase_imgs {
   margin: 2rem 0 4rem 0;
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-evenly;
 }
 
 .casestudy_img {
@@ -478,11 +547,20 @@ header {
 
 .from_recommdention_conversion {
   width: 100%;
-  margin: 6rem auto;
+  padding: 6rem 0;
 }
 
 .from_recommdention_conversion h3 {
-  font-size: 2.25rem;
+  font-size: 1.875rem;
+}
+
+.get_demo {
+  margin-top: 35px;
+}
+
+.get_demo a {
+  color: #ffffff;
+  padding: 10px 40px;
 }
 
 .accordion {
@@ -553,15 +631,6 @@ header {
 }
 
 
-.get_demo {
-  margin-top: 35px;
-}
-
-.get_demo a {
-  color: #ffffff;
-  padding: 10px 40px;
-}
-
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -588,15 +657,42 @@ header {
   display: none;
 }
 
+.for_r {
+  font-size: 14px;
+  padding: 5px;
+}
 
 @media screen and (max-width: 1130px) {
+  .for_r {
+    font-size: 12px;
+  }
+
+  .get_app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 0 0 0;
+  }
+
+  .logo_business {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .get_the_app a {
+    border: 1px solid #8111E8;
+    border-radius: 6px;
+    padding: 6px 16px !important;
+  }
+
   .sideleft .me-4 img {
     display: none;
   }
 
   .sideleft .me-4 svg {
     display: block;
-    width: 80%;
+    width: 68%;
   }
 
   .active .fw {
@@ -629,10 +725,21 @@ header {
   }
 
   .nav-item:nth-child(6) {
-    margin: 1rem 0;
-    padding: 1rem 0;
+    margin: 0;
+    padding: 8px 0;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
+    font-size: 14px !important;
+  }
+
+  .nav-item a:nth-child(7) {
+    padding: 6px 10px;
+    height: -webkit-fill-available;
+    max-width: 30%;
+  }
+
+  .headerIconsRes {
+    width: 14%;
   }
 
   .login_cta a {
@@ -647,11 +754,12 @@ header {
 
   .header1 .ms-5 {
     margin-left: 0 !important;
+    gap: 0 !important;
   }
 
   .openNav {
     display: block;
-    color: #fff;
+    color: #ffffff;
   }
 
   .sideright {
@@ -712,6 +820,10 @@ header {
     margin-left: 50px;
   }
 
+  .bg_black{
+    margin: -1px 0 0 0;
+  }
+
   .cs_works {
     margin: 8px 8px 8px 0px;
     width: max-content;
@@ -719,7 +831,7 @@ header {
   }
 
   header {
-    padding: 20px 25px;
+    padding: 10px 25px;
     background-color: #000;
   }
 
@@ -732,23 +844,13 @@ header {
     display: none !important;
   }
 
-  .dropdown-menu {
-    border: none;
-  }
-
-  .dropdown-menu {
-    padding: 20px;
-    width: 100%;
-  }
-
   .section_content {
-    padding: 2rem;
+    padding: 2rem 1rem 0 1rem;
   }
 
   .bg_black_content {
     align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
   }
 
   .heading_contents h1 {
@@ -759,6 +861,7 @@ header {
   .heading_contents p {
     text-align: center;
     font-size: 16px;
+    margin: 0;
   }
 
   .heading_contents div {
@@ -768,7 +871,25 @@ header {
   .img_header {
     width: 100%;
     height: auto;
-    margin-top: 2rem;
+    margin: 2.3rem 0;
+  }
+
+  .getdemo_lalign {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: auto
+  }
+
+  .schedule_connect {
+    margin: 1rem 0 3rem 0;
+  }
+
+  .schedule_connect .h1 {
+    font-size: 0.875rem;
+  }
+
+  .schedule_connect a {
+    font-size: 13px;
   }
 
   .discover_name {
@@ -851,6 +972,8 @@ header {
     overflow-x: scroll;
     overflow-y: hidden;
     margin: 1rem 0;
+    gap: 1rem;
+    justify-content: unset;
   }
 
   .titleCase_imgs::-webkit-scrollbar {
@@ -902,11 +1025,21 @@ header {
 
   .from_recommdention_conversion {
     width: 100%;
-    margin: 2rem auto;
+    padding: 2rem auto;
   }
 
   .from_recommdention_conversion h3 {
-    font-size: 1rem;
+    font-size: 1.125rem;
+  }
+
+
+  .get_demo {
+    margin-top: 24px;
+  }
+
+  .get_demo a {
+    padding: 10px 25px;
+    font-size: 14px;
   }
 
   .translate_flex {
@@ -929,10 +1062,6 @@ header {
 
   .col_camp p {
     font-size: 14px;
-  }
-
-  .get_demo a {
-    padding: 10px 30px;
   }
 
   /*  */
