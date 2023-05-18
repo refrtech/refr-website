@@ -2,7 +2,9 @@
   font-weight: bolder !important;
 }
 
-
+.A6padding{
+  padding: 6px !important;
+}
 
 .uppercase {
   text-transform: uppercase;

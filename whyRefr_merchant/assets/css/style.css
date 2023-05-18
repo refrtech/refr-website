@@ -22,6 +22,7 @@ html {
   background: #dcff4f;
 }
 
+
 .dropdown_header h4 {
   font-size: 18px;
   font-weight: 600;
@@ -31,7 +32,7 @@ html {
   padding: 1rem !important;
   width: 1000px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
-  border: none;
+  border: none !important;
 }
 
 .dropdown_content_svg {
@@ -213,6 +214,42 @@ header {
   display: none;
 }
 
+
+/*  */
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+
+.sideleft .me-4 a {
+  display: block;
+  text-decoration: none;
+}
+
+.sideleft .me-4 img {
+  display: block;
+  max-width: 75px;
+  width: 100%;
+}
+
+.sideleft .me-4 svg {
+  display: none;
+}
+
+.for_r {
+  font-size: 14px;
+}
+
+
+
 /*  */
 
 /*  */
@@ -376,38 +413,6 @@ header {
 }
 
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
-
-.sideleft .me-4 a {
-  display: block;
-  text-decoration: none;
-}
-
-.sideleft .me-4 img {
-  display: block;
-  max-width: 75px;
-  width: 100%;
-}
-
-.sideleft .me-4 svg {
-  display: none;
-}
-
-.for_r {
-  font-size: 14px;
-}
-
-
-
 @media screen and (max-width: 1130px) {
 
   .for_r {
@@ -419,18 +424,21 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 6rem 0 0 0;
+    border: 1px solid red;
   }
 
   .logo_business {
     display: flex;
     align-items: center;
     gap: 1rem;
+    border: 1px solid green;
   }
 
   .get_the_app a {
     border: 1px solid #8111E8;
     border-radius: 6px;
     padding: 6px 16px !important;
+    border: 1px solid blue;
   }
 
   .sideleft .me-4 img {
@@ -439,11 +447,11 @@ header {
 
   .sideleft .me-4 svg {
     display: block;
-    /* width: 68%; */
   }
 
   .active .fw {
     font-weight: 600 !important;
+    color:#000000
   }
 
   .active .rotate {
@@ -471,12 +479,17 @@ header {
     margin-top: 1rem;
   }
 
+  .sidenav_text{
+    font-size: 14px;
+  }
+
   .nav-item:nth-child(6) {
     margin: 0;
-    padding: 8px 0;
+    padding: 6px 0;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
-    font-size: 14px !important;
+    font-size: 12px !important;
+    /* background-color: red; */
   }
 
   .nav-item a:nth-child(7) {
@@ -494,9 +507,13 @@ header {
     background: #8100e9;
     border-radius: 22px;
     color: #ffffff !important;
-    width: 124px !important;
-    height: 44px;
+    width: 93px !important;
+    height: 38px;
     text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
   }
 
   .header1 .ms-5 {
@@ -540,7 +557,7 @@ header {
   .sidenav a {
     padding: 8px 8px 10px 0px;
     text-decoration: none;
-    font-size: 18px !important;
+    font-size: 16px !important;
     color: #000;
     display: block;
     transition: 0.3s;
@@ -585,6 +602,9 @@ header {
     font-size: 16px;
     display: none !important;
   }
+
+
+  /*e  */
 
   /*e  */
 

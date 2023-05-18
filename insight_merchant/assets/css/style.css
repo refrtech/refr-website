@@ -54,6 +54,7 @@ html {
   color: #ceff00;
 }
 
+
 .dropdown_header h4 {
   font-size: 18px;
   font-weight: 600;
@@ -62,6 +63,8 @@ html {
 .dropdown-menu {
   padding: 1rem !important;
   width: 1000px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
+  border: none !important;
 }
 
 .dropdown_content_svg {
@@ -243,7 +246,42 @@ header {
   display: none;
 }
 
+
 /*  */
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+
+.sideleft .me-4 a {
+  display: block;
+  text-decoration: none;
+}
+
+.sideleft .me-4 img {
+  display: block;
+  max-width: 75px;
+  width: 100%;
+}
+
+.sideleft .me-4 svg {
+  display: none;
+}
+
+.for_r {
+  font-size: 14px;
+}
+
+
+
 
 .section_content {
   padding: 4rem 4rem 4rem 5rem;
@@ -480,38 +518,9 @@ header {
 
 
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
-
-.sideleft .me-4 a {
-  display: block;
-  text-decoration: none;
-}
-
-.sideleft .me-4 img {
-  display: block;
-  max-width: 75px;
-  width: 100%;
-}
-
-.sideleft .me-4 svg {
-  display: none;
-}
-
-.for_r {
-  font-size: 14px;
-}
-
 
 @media screen and (max-width: 1130px) {
+
   .for_r {
     font-size: 12px;
   }
@@ -548,6 +557,7 @@ header {
 
   .active .fw {
     font-weight: 600 !important;
+    color:#000000
   }
 
   .active .rotate {
@@ -698,6 +708,10 @@ header {
     font-size: 16px;
     display: none !important;
   }
+
+
+  /*e  */
+  
 
   /*e  */
 

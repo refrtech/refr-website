@@ -21,7 +21,6 @@ html {
 .bg_dc {
   background: #dcff4f;
 }
-
 .dropdown_header h4 {
   font-size: 18px;
   font-weight: 600;
@@ -30,6 +29,9 @@ html {
 .dropdown-menu {
   padding: 1rem !important;
   width: 1000px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
+  border: none !important;
+
 }
 
 .dropdown_content_svg {
@@ -37,10 +39,12 @@ html {
   height: 24px;
 }
 
+
 .dropdown_content_svg svg {
   width: 24px;
   height: 24px;
 }
+
 
 .dropdown-item span {
   display: flex;
@@ -54,6 +58,7 @@ html {
   font-size: 14px !important;
 }
 
+
 .dropdown_text {
   font-size: 12px;
 }
@@ -64,8 +69,7 @@ html {
   content: "";
   height: 1em;
   margin-left: 0.25em;
-  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg)
-    no-repeat 50% 50%;
+  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg) no-repeat 50% 50%;
   -webkit-mask-size: cover;
   transition: opacity 0.12s ease, transform 0.3s cubic-bezier(0.66, 0, 0.34, 1);
   width: 1em;
@@ -208,6 +212,38 @@ header {
 .sidenav a {
   display: none;
 }
+
+
+/*  */
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+
+.sideleft .me-4 a {
+  display: block;
+  text-decoration: none;
+}
+
+.sideleft .me-4 img {
+  display: block;
+  max-width: 68px;
+  width: 100%;
+}
+
+
+.for_r {
+  font-size: 14px;
+}
+
 
 .video_container {
   position: relative;
@@ -517,65 +553,52 @@ header {
 
 /* media queries and animation  */
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
-.sideleft .me-4 a {
-  display: block;
-  text-decoration: none;
-}
-
-.sideleft .me-4 img {
-  display: block;
-  max-width: 75px;
-  width: 100%;
-}
-.sideleft .me-4 svg {
-  display: none;
-}
 
 @media screen and (max-width: 1130px) {
+  .for_r {
+    font-size: 12px;
+  }
+
   .get_app {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 0 0 0;
+    padding: 6rem 0 0 0;
+    border: 1px solid red;
   }
 
   .logo_business {
     display: flex;
     align-items: center;
     gap: 1rem;
+    border: 1px solid green;
   }
 
   .get_the_app a {
-    border: 1px solid #8111e8;
+    border: 1px solid #8111E8;
     border-radius: 6px;
     padding: 6px 16px !important;
+    border: 1px solid blue;
   }
+
   .sideleft .me-4 img {
     display: block;
   }
-  .sideleft .me-4 svg {
-    display: none;
-    width: 80%;
-  }
+
   .active .fw {
     font-weight: 600 !important;
+    color: #000000;
   }
+
   .active .rotate {
     transform: rotate(0deg);
     transition-duration: 0.3s;
   }
+
   .active .rotate {
     transform: rotate(180deg);
   }
+
   .sidebar li .submenu {
     list-style: none;
     margin: 0;
@@ -583,6 +606,7 @@ header {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
   .sidenav a:hover {
     color: #000;
   }
@@ -591,11 +615,23 @@ header {
     margin-top: 1rem;
   }
 
+  .sidenav_text {
+    font-size: 14px;
+  }
+
   .nav-item:nth-child(6) {
-    margin: 1rem 0;
-    padding: 1rem 0;
+    margin: 0;
+    padding: 6px 0;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
+    font-size: 12px !important;
+    /* background-color: red; */
+  }
+
+  .nav-item a:nth-child(7) {
+    padding: 6px 10px;
+    height: -webkit-fill-available;
+    max-width: 30%;
   }
 
   .headerIconsRes {
@@ -607,23 +643,32 @@ header {
     background: #8100e9;
     border-radius: 22px;
     color: #ffffff !important;
-    width: 124px !important;
-    height: 44px;
+    width: 93px !important;
+    height: 38px;
     text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
   }
+
   .header1 .ms-5 {
     margin-left: 0 !important;
   }
+
   .openNav {
     display: block;
     color: #000000;
   }
+
   .sideright {
     display: none;
   }
+
   .header_list {
     display: none;
   }
+
   .sidenav {
     height: 100%;
     width: 0;
@@ -636,9 +681,11 @@ header {
     transition: 0.5s;
     padding-top: 40px;
   }
+
   .sidenav {
     display: block;
   }
+
   .sidenav li {
     list-style-type: none;
   }
@@ -646,7 +693,7 @@ header {
   .sidenav a {
     padding: 8px 8px 10px 0px;
     text-decoration: none;
-    font-size: 18px !important;
+    font-size: 16px !important;
     color: #000;
     display: block;
     transition: 0.3s;
@@ -680,7 +727,6 @@ header {
 
   header {
     padding: 10px 25px;
-    /* background-color: #000; */
   }
 
   .dropdown_cc {
@@ -691,7 +737,6 @@ header {
     font-size: 16px;
     display: none !important;
   }
-
   .video_content_para {
     width: 100%;
     padding: 0 1rem;

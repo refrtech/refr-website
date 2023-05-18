@@ -255,6 +255,7 @@ header {
 
   .active .fw {
     font-weight: 600 !important;
+    color:#000000
   }
 
   .active .rotate {
