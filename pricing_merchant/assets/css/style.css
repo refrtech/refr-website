@@ -22,14 +22,43 @@ html {
   background: #dcff4f;
 }
 
+.dropdown_header h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .dropdown-menu {
-  padding: 2rem 1rem !important;
+  padding: 1rem !important;
   width: 1000px;
 }
+
+.dropdown_content_svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+.dropdown_content_svg svg {
+  width: 24px;
+  height: 24px;
+}
+
 
 .dropdown-item span {
   display: flex;
   align-items: center;
+  font-size: 16px;
+  padding: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.custom_font {
+  font-size: 14px !important;
+}
+
+
+.dropdown_text {
+  font-size: 12px;
 }
 
 .dropdown-item span::after {
@@ -38,8 +67,7 @@ html {
   content: "";
   height: 1em;
   margin-left: 0.25em;
-  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg)
-    no-repeat 50% 50%;
+  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg) no-repeat 50% 50%;
   -webkit-mask-size: cover;
   transition: opacity 0.12s ease, transform 0.3s cubic-bezier(0.66, 0, 0.34, 1);
   width: 1em;
@@ -54,7 +82,7 @@ html {
 
 .dropd_w {
   padding: 30px;
-  width: 500px;
+  width: auto;
 }
 
 .drop_down_lists {
@@ -63,13 +91,14 @@ html {
 }
 
 .dropdown_content {
-  margin: 2.5rem 0;
+  margin: 1rem 0;
 }
 
 .dc_m {
   display: flex;
-  gap: 1.4rem;
-  padding-bottom: 20px;
+  gap: 1rem;
+  padding-bottom: 8px;
+  text-decoration: none;
 }
 
 .dc_m:last-child {
@@ -78,10 +107,12 @@ html {
 
 .dc_r h6 {
   color: #000000;
+  font-size: 16px;
 }
 
 .dc_r p {
   color: #8e8e8e;
+  font-size: 12px;
 }
 
 .dd_img {
@@ -104,6 +135,11 @@ html {
   outline: none;
   border: none;
   padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
 }
 
 header {
@@ -135,6 +171,7 @@ header {
   text-decoration: none;
   font-size: 1rem;
   text-transform: capitalize;
+  padding: 0;
 }
 
 .sideright {
@@ -155,6 +192,7 @@ header {
   display: flex;
   align-items: center;
   padding: 0 18px;
+  border-radius: 50px;
 }
 
 .closebtn {
@@ -173,6 +211,7 @@ header {
   display: none;
 }
 
+
 /*  */
 
 .pricing_div {
@@ -181,8 +220,13 @@ header {
 
 .pricing_div h1 {
   margin: 0 0 0.6rem 0;
-  font-size: 3rem;
+  font-size: 50px;
 }
+
+.pricing_div p{
+  font-size: 18px;
+}
+
 
 .input_cta {
   width: 498px;
@@ -224,7 +268,8 @@ header {
 }
 
 .inputD_text {
-  font-size: 0.8rem;
+  font-size: 0.8rem !important;
+  margin: 0;
 }
 
 .contents {
@@ -617,7 +662,7 @@ header {
 .accordion {
   color: black;
   background-color: white;
-  padding: 0 0 6rem 0;
+  padding: 0 0 0 0;
 }
 
 .accordion .container {
@@ -680,6 +725,7 @@ header {
   font-size: 30px;
 }
 
+
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -689,6 +735,7 @@ header {
     font-size: 18px;
   }
 }
+
 
 .sideleft .me-4 a {
   display: block;
@@ -704,6 +751,11 @@ header {
 .sideleft .me-4 svg {
   display: none;
 }
+
+.for_r {
+  font-size: 14px;
+}
+
 
 .filterDiv {
   display: none;
@@ -774,14 +826,16 @@ header {
   color: #494949;
 }
 
+
 .from_recommdention_conversion {
   width: 100%;
-  margin: 6rem auto;
+  padding: 6rem 0;
 }
 
 .from_recommdention_conversion h3 {
-  font-size: 2.25rem;
+  font-size: 1.875rem;
 }
+
 
 .get_demo {
   margin-top: 35px;
@@ -814,13 +868,38 @@ header {
 }
 
 @media screen and (max-width: 1130px) {
+  .for_r {
+    font-size: 12px;
+  }
+
+  .get_app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 0 0 0;
+    border: 1px solid red;
+  }
+
+  .logo_business {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid green;
+  }
+
+  .get_the_app a {
+    border: 1px solid #8111E8;
+    border-radius: 6px;
+    padding: 6px 16px !important;
+    border: 1px solid blue;
+  }
+
   .sideleft .me-4 img {
     display: none;
   }
 
   .sideleft .me-4 svg {
     display: block;
-    width: 80%;
   }
 
   .active .fw {
@@ -852,11 +931,27 @@ header {
     margin-top: 1rem;
   }
 
+  .sidenav_text{
+    font-size: 14px;
+  }
+
   .nav-item:nth-child(6) {
-    margin: 1rem 0;
-    padding: 1rem 0;
+    margin: 0;
+    padding: 6px 0;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
+    font-size: 12px !important;
+    /* background-color: red; */
+  }
+
+  .nav-item a:nth-child(7) {
+    padding: 6px 10px;
+    height: -webkit-fill-available;
+    max-width: 30%;
+  }
+
+  .headerIconsRes {
+    width: 14%;
   }
 
   .login_cta a {
@@ -864,9 +959,13 @@ header {
     background: #8100e9;
     border-radius: 22px;
     color: #ffffff !important;
-    width: 124px !important;
-    height: 44px;
+    width: 93px !important;
+    height: 38px;
     text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
   }
 
   .header1 .ms-5 {
@@ -875,7 +974,7 @@ header {
 
   .openNav {
     display: block;
-    color: #fff;
+    color: #ffffff;
   }
 
   .sideright {
@@ -910,7 +1009,7 @@ header {
   .sidenav a {
     padding: 8px 8px 10px 0px;
     text-decoration: none;
-    font-size: 18px !important;
+    font-size: 16px !important;
     color: #000;
     display: block;
     transition: 0.3s;
@@ -943,7 +1042,7 @@ header {
   }
 
   header {
-    padding: 20px 25px;
+    padding: 10px 25px;
     background-color: #000;
   }
 
@@ -956,14 +1055,6 @@ header {
     display: none !important;
   }
 
-  .dropdown-menu {
-    border: none;
-  }
-
-  .dropdown-menu {
-    padding: 20px;
-    width: 100%;
-  }
 
   /*e  */
 
@@ -1032,7 +1123,8 @@ header {
 
   .budget_container {
     flex-direction: column;
-    margin: 0 0 6rem 0;
+    margin: 10px !important;
+    border-radius: 8px;
   }
 
   .budget_heading h4 {
@@ -1070,6 +1162,10 @@ header {
   .all_free_ctas {
     padding: 1rem 0;
     display: flex;
+  }
+
+  .select_buss_h{
+    padding: 4rem 0 0rem 0;
   }
 
   .select_buss_h h1 {
@@ -1122,6 +1218,7 @@ header {
   .processingfess_section {
     padding: 3rem 2rem;
     border-radius: 0;
+    margin: 0 0 4rem 0;
   }
 
   .pf_heading h3 {
@@ -1170,17 +1267,24 @@ header {
     padding: 4rem 0 2rem 0;
   }
 
+
   .from_recommdention_conversion {
     width: 100%;
-    margin: 0;
+    padding: 2rem auto;
   }
 
   .from_recommdention_conversion h3 {
-    font-size: 1rem;
+    font-size: 1.125rem;
+  }
+
+
+  .get_demo {
+    margin-top: 24px;
   }
 
   .get_demo a {
-    padding: 10px 30px;
+    padding: 10px 25px;
+    font-size: 14px;
   }
 
   .get_demo2 {
@@ -1189,9 +1293,15 @@ header {
 
   .ads_expertise {
     width: 100%;
+    margin: 0 auto ;
   }
 
   .ads_expertise h1 {
-    font-size: 1.25;
+    font-size: 18px;
+  }
+
+  .get_demo2 a{
+    padding: 10px 14px;
+    font-size: 14px;
   }
 }

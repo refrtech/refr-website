@@ -222,7 +222,7 @@ header {
 
 .img_header {
   width: 550px;
-  height: 550px;
+  height: auto;
   margin-left: auto;
 }
 
@@ -346,22 +346,24 @@ section {
   font-size: 30px;
 }
 
-.from_recommdention_conversion {
-  width: 100%;
-  margin: 6rem auto;
-}
-
-.from_recommdention_conversion h3 {
-  font-size: 2.25rem;
-}
-
 .get_demo {
   margin-top: 35px;
 }
 
 .get_demo a {
   color: #ffffff;
-  padding: 14px 50px;
+  padding: 10px 40px;
+  text-decoration: none;
+}
+
+
+.from_recommdention_conversion {
+  width: 100%;
+  padding: 6rem 0;
+}
+
+.from_recommdention_conversion h3 {
+  font-size: 1.875rem;
 }
 
 .gs_cs a {
@@ -393,6 +395,13 @@ section {
 .sideleft .me-4 svg {
   display: none;
 }
+
+.leftContent{
+  display: flex;
+  gap: 1.5rem!important;
+  align-items: center;
+}
+
 
 @media screen and (max-width: 1200px) {
   .sideleft .me-4 img {
@@ -540,16 +549,20 @@ section {
   /*e  */
 
   .section_content {
-    padding: 2rem;
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  .sm_d_none{
+    display: none !important;
   }
 
   .bg_black_content {
     align-items: center;
     flex-direction: column;
-    gap: 3.5rem;
+    /* gap: 3.5rem; */
   }
   .heading_contents h1 {
-    font-size: 1.8rem;
+    font-size: 1.625rem;
     text-align: center;
   }
   .heading_contents p {
@@ -559,7 +572,8 @@ section {
   .heading_contents div {
     text-align: center;
     justify-content: center;
-    margin: 25px 0 0 0;
+    margin: 2rem 0 0 0;
+    flex-direction: inherit;
   }
 
   .gs_cs {
@@ -568,8 +582,13 @@ section {
   }
 
   .gs_cs a {
-    padding: 8px 20px !important;
+    padding: 10px 20px !important;
     width: max-content;
+    font-size: 16px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .img_header {
@@ -630,7 +649,15 @@ section {
   }
 
   .from_recommdention_conversion h3 {
-    font-size: 1rem;
+    font-size: 1.1875rem;
+  }
+  .get_demo{
+    margin: 25px;
+  }
+
+  .get_demo a {
+    padding: 10px 25px;
+    font-size: 14px;
   }
   .refr_svg_logo svg {
     width: 80px;
@@ -644,7 +671,7 @@ section {
   /* howit works */
 
   section {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
 
   .main {

@@ -2007,7 +2007,8 @@
     <div id="footer"></div>
 
     <script>
-        $(function () {
+        $(function ()
+        {
             // $("#header").load("header.html"); 
             $("#footer").load("../merchant_footer/index.html");
         });
@@ -2043,7 +2044,8 @@
 
         var istarted = false;
 
-        function step(startTime) {
+        function step(startTime)
+        {
             console.log('inview');
 
             // Array.from(text).forEach((el, idx) => {
@@ -2083,12 +2085,14 @@
         const box = document.querySelectorAll(".work-img");
         const bgwarp = document.querySelector(".how-work");
 
-        document.addEventListener("scroll", function () {
+        document.addEventListener("scroll", function ()
+        {
 
             var videoel = document.getElementById("nextcont");
             elBounds = videoel.getBoundingClientRect();
             console.log(elBounds);
-            if (0 >= elBounds.top) {
+            if (0 >= elBounds.top)
+            {
                 // if (istarted === false) {
                 var secondimage = document.getElementById('secondimg');
                 secondimage.classList.add("show");
@@ -2096,7 +2100,8 @@
                 animation2.pause();
                 // }
             }
-            if (elBounds.top >= 0) {
+            if (elBounds.top >= 0)
+            {
                 // if (istarted === false) {
                 var secondimage = document.getElementById('secondimg');
                 secondimage.classList.remove("show");
@@ -2110,7 +2115,8 @@
 
 
 
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function ()
+        {
 
             new Splide('#slider1', {
                 type: "loop",
@@ -2151,21 +2157,25 @@
                 "assets/images/mainslider/banner3.png",
                 "assets/images/mainslider/banner4.png",
             ];
-        function changeImg(myelemet, myimgs) {
+        function changeImg(myelemet, myimgs)
+        {
             "use stict";
-            setInterval(function () {
+            setInterval(function ()
+            {
                 var myRandomNum = Math.floor(Math.random() * myimgs.length);
 
                 myelemet.src = myimgs[myRandomNum];
             }, 5000);
         }
         changeImg(myelemet, myimgs);
-        window.addEventListener('load', (event) => {
+        window.addEventListener('load', (event) =>
+        {
             var myRandomNum = Math.floor(Math.random() * myimgs.length);
 
             myelemet.src = myimgs[myRandomNum];
         });
-        $("a.menulinks").click(function () {
+        $("a.menulinks").click(function ()
+        {
             $(this).next("ul").slideToggle(250);
             return false;
         });

@@ -818,7 +818,6 @@ header {
 
   .sideleft .me-4 svg {
     display: block;
-    width: 100%;
   }
 
   .active .fw {
@@ -1080,7 +1079,7 @@ header {
   }
 
   .section_content {
-    padding: 2rem 1rem 0 1rem;
+    padding: 2rem 1rem 2rem 1rem;
   }
 
   .heading_contents h1 {
@@ -1110,7 +1109,7 @@ header {
   .img_header {
     width: 100%;
     height: auto;
-    margin-top: 2rem;
+    margin: 2rem 0 2rem 0;
   }
 
   .video-js {

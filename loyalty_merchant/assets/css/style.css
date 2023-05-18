@@ -302,6 +302,7 @@ header {
   width: 100%;
   max-width: 700px;
   margin: auto;
+  padding: 5rem 0;
 }
 
 .discover_name h1 {
@@ -854,13 +855,12 @@ header {
 
   /*e  */
   .section_content {
-    padding: 2rem;
+    padding: 2rem 1rem 0 1rem;
   }
 
   .bg_black_content {
     align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
   }
 
   .heading_contents h1 {
@@ -896,8 +896,8 @@ header {
   .content1 {
     flex-direction: column;
     width: 100%;
-    gap: 4rem;
-    margin-bottom: 3rem;
+    gap: 2rem;
+    margin-bottom: 4rem;
 
   }
 
@@ -953,6 +953,7 @@ header {
   .section__hero {
     height: 230px;
     width: 331px;
+    margin: 2.3rem 0;
   }
 
   .crossFade__image {
@@ -1108,8 +1109,13 @@ header {
     margin: 0;
   }
 
+  .get_demo{
+    margin-top: 25px;
+  }
+
   .get_demo a {
-    padding: 10px 30px;
+    padding: 10px 25px;
+    font-size: 14px;
   }
 
   

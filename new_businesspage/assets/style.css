@@ -6,7 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .max_width {
   max-width: 100%;
 }
@@ -23,8 +22,7 @@ html {
   background: #dcff4f;
 }
 
-
-.dropdown_header h4{
+.dropdown_header h4 {
   font-size: 18px;
   font-weight: 600;
 }
@@ -34,17 +32,15 @@ html {
   width: 1000px;
 }
 
-.dropdown_content_svg{
+.dropdown_content_svg {
   width: 24px;
   height: 24px;
 }
 
-
-.dropdown_content_svg svg{
+.dropdown_content_svg svg {
   width: 24px;
   height: 24px;
 }
-
 
 .dropdown-item span {
   display: flex;
@@ -54,12 +50,11 @@ html {
   font-weight: 500;
 }
 
-.custom_font{
+.custom_font {
   font-size: 14px !important;
 }
 
-
-.dropdown_text{
+.dropdown_text {
   font-size: 12px;
 }
 
@@ -108,7 +103,7 @@ html {
   padding-bottom: 0;
 }
 
-.dc_r h6{
+.dc_r h6 {
   color: #000000;
   font-size: 16px;
 }
@@ -258,7 +253,6 @@ header {
   align-items: center;
 }
 
-
 .bg_gradient_text_clr {
   background: linear-gradient(90deg, #dfff5c 0%, #e5c8ff 100%);
   height: 20px;
@@ -368,9 +362,9 @@ header {
   margin-top: -3rem !important;
 }
 
-.core_text a{
- display: flex;
- align-items: center;
+.core_text a {
+  display: flex;
+  align-items: center;
 }
 
 .videoFile video {
@@ -411,7 +405,7 @@ header {
   overflow: hidden;
 }
 
-.anime_text{
+.anime_text {
   font-size: 1.875rem;
 }
 
@@ -441,11 +435,11 @@ header {
   height: auto;
 }
 
-.refrContent{
+.refrContent {
   font-size: 1.875rem;
-    line-height: normal;
-    text-align: left;
-    padding: 4rem 0;
+  line-height: normal;
+  text-align: left;
+  padding: 4rem 0;
 }
 
 .recommend_header {
@@ -523,7 +517,6 @@ header {
 
 /* media queries and animation  */
 
-
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -533,8 +526,7 @@ header {
   }
 }
 
-
-.sideleft .me-4 a{
+.sideleft .me-4 a {
   display: block;
   text-decoration: none;
 }
@@ -563,7 +555,7 @@ header {
   }
 
   .get_the_app a {
-    border: 1px solid #8111E8;
+    border: 1px solid #8111e8;
     border-radius: 6px;
     padding: 6px 16px !important;
   }
@@ -606,7 +598,7 @@ header {
     border-bottom: 1px solid #eeeeee;
   }
 
-  .headerIconsRes{
+  .headerIconsRes {
     width: 14%;
   }
 
@@ -700,8 +692,6 @@ header {
     display: none !important;
   }
 
- 
-
   .video_content_para {
     width: 100%;
     padding: 0 1rem;
@@ -745,7 +735,7 @@ header {
   }
 
   .home_qr_img {
-    width: 200px;
+    width: 300px;
     height: auto;
   }
 
@@ -822,6 +812,8 @@ header {
 
   .get_demo a {
     margin: 10px 0 40px 0;
+    width: 120px;
+    height: 38px;
   }
 
   .margin_20 {
@@ -832,7 +824,7 @@ header {
     gap: 0rem !important;
   }
 
-  .slide{
+  .slide {
     width: 200px !important;
   }
 
@@ -898,20 +890,18 @@ header {
   }
 
   .bg_gradient_text_clr {
-    height: 12px;
+    height: 8px;
   }
 
   .para h3 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.0625rem;
     padding: 3rem 0;
   }
 
-
-
   .join_world {
     padding: 50px 0 30px 0;
-    font-size: 1.5rem !important;
+    font-size: 24px !important;
   }
 
   .wrapper {
@@ -921,7 +911,7 @@ header {
   .main {
     width: 100% !important;
     height: 0vh !important;
-    min-height: 850px !important;
+    min-height: 950px !important;
   }
 
   .width_100 {
@@ -945,7 +935,7 @@ header {
     width: 100% !important;
     height: 367px !important;
     position: absolute !important;
-    top: 13rem !important;
+    top: 16rem !important;
     right: 0;
     min-height: 367px !important;
   }
@@ -976,7 +966,7 @@ header {
   }
 
   .animate_text {
-    font-size: 18px !important;
+    font-size: 16px !important;
     text-align: left;
   }
 
@@ -986,7 +976,7 @@ header {
     position: absolute;
     bottom: 30px;
     text-align: center;
-    left: 1rem;
+    left: 1.6rem;
   }
 
   .svg {
@@ -1079,15 +1069,20 @@ header {
 
   .from_recommdention_conversion {
     width: 100%;
-    margin: 2rem auto;
+    margin: 0rem auto;
   }
 
   .from_recommdention_conversion h3 {
     font-size: 1rem;
   }
 
+  .get_demoa{
+    margin-top: 25px ;
+  }
+
   .get_demoa a {
-    padding: 10px 35px;
+    padding: 10px 25px;
+    font-size: 14px;
   }
 }
 
@@ -1285,14 +1280,8 @@ header {
   }
 }
 
-
 @media screen and (max-width: 1130px) {
-
-
-  
-
   /*  */
-
 
   .mainHeading {
     font-size: 1.5rem;
@@ -1309,7 +1298,6 @@ header {
 
 /* bootstarp container */
 @media (min-width: 1400px) {
-
   .container,
   .container-lg,
   .container-md,

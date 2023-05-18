@@ -22,8 +22,6 @@ const reviews = [
     id: 1,
     desc: "Refr let’s our customers give us a shout-out from the table which has led to increase in our order volume. We are very pleased with this genuine form of marketing for our restaurant.",
     storeName: "SEEFAH",
-    storeDetails: "Seefah Ketchaiyo",
-    jd: "Chef",
     logo: "https://firebasestorage.googleapis.com/v0/b/refr/o/website%2FRectangle%2010543.png?alt=media&token=e99323d5-7f09-4e0a-b2c8-c499cbaf6e46",
     banner:
       "https://firebasestorage.googleapis.com/v0/b/refr/o/website%2Fsheefash.png?alt=media&token=25b110f4-bcd8-45b6-9b3e-e31486d5a9bd",
@@ -32,29 +30,22 @@ const reviews = [
     id: 2,
     desc: "Expanding our business was easy with Refr. Since our customers started recommending us, we gained recognition in our neighbourhood which lead to increased walk-ins.",
     storeName: "Snip & Scissors",
-    storeDetails: "",
-    jd: "",
-    logo: "",
-    banner: "",
+    logo: "https://firebasestorage.googleapis.com/v0/b/refr/o/website%2Fsnip_banner.png?alt=media&token=b87512bf-61cc-4d3f-8b30-76b389d9ec74",
+    banner: "https://firebasestorage.googleapis.com/v0/b/refr/o/website%2Fsnip_logo.png?alt=media&token=626a26d2-aeca-4aa6-bbd9-72e2f59daa38",
   },
   {
     id: 3,
     desc: "We are quite happy to list our brand on the Refr marketplace. Customers can easily pay with RefrCash, which let’s more people buy from us. They help with the cataloguing as well, so it’s been a smooth ride.",
     storeName: "Wrapcart",
-    storeDetails: "",
-    jd: "",
-    logo: "",
-    banner: "",
+    logo: "https://firebasestorage.googleapis.com/v0/b/refr/o/website%2FwrapcartLogo.png?alt=media&token=d6875079-0fa5-446d-abd5-68a633d7f55d",
+    banner: "https://firebasestorage.googleapis.com/v0/b/refr/o/website%2Fwrapcartbanner.png?alt=media&token=03870319-ee0d-4098-86be-12b78bc9db67",
   },
 ];
 
 const desc = document.getElementById("desc");
 const storename = document.getElementById("storename");
-const storedetails = document.getElementById("storeDetails");
-const jd = document.getElementById("jd");
 const logo = document.getElementById("logo");
 const banner = document.getElementById("banner");
-
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 
@@ -66,8 +57,6 @@ window.addEventListener("DOMContentLoaded", function () {
   const item = reviews[currentItem];
   desc.textContent = item.desc;
   storename.textContent = item.storeName;
-  storedetails.textContent = item.storeDetails;
-  jd.textContent = item.jd;
   logo.src = item.logo;
   banner.src = item.banner;
 });
@@ -78,20 +67,19 @@ function showPerson(person) {
   const item = reviews[person];
   desc.textContent = item.desc;
   storename.textContent = item.storeName;
-  storedetails.textContent = item.storeDetails;
-  jd.textContent = item.jd;
   logo.src = item.logo;
   banner.src = item.banner;
 }
 
 // show next person
+  // document.getElementById("desc").classList.toggle("textColorChange");
+
 
 nextBtn.addEventListener("click", function (e) {
   currentItem++;
   if (currentItem > reviews.length - 1) {
     currentItem = 0;
   }
-  // document.getElementById("desc").classList.toggle("textColorChange");
 
   showPerson(currentItem);
 });
@@ -103,8 +91,6 @@ prevBtn.addEventListener("click", function () {
 
   if (currentItem < 0) {
     currentItem = reviews.length - 1;
-  } else {
-    document.getElementById("desc").classList.toggle("textColorChange");
   }
 
   showPerson(currentItem);

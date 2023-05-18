@@ -54,14 +54,43 @@ html {
   color: #ceff00;
 }
 
+.dropdown_header h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .dropdown-menu {
-  padding: 2rem 1rem !important;
+  padding: 1rem !important;
   width: 1000px;
 }
+
+.dropdown_content_svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+.dropdown_content_svg svg {
+  width: 24px;
+  height: 24px;
+}
+
 
 .dropdown-item span {
   display: flex;
   align-items: center;
+  font-size: 16px;
+  padding: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.custom_font {
+  font-size: 14px !important;
+}
+
+
+.dropdown_text {
+  font-size: 12px;
 }
 
 .dropdown-item span::after {
@@ -70,8 +99,7 @@ html {
   content: "";
   height: 1em;
   margin-left: 0.25em;
-  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg)
-    no-repeat 50% 50%;
+  -webkit-mask: url(https://cdn.shopify.com/shopifycloud/brochure2/staging/assets/link-arrow.e34cea4d.svg) no-repeat 50% 50%;
   -webkit-mask-size: cover;
   transition: opacity 0.12s ease, transform 0.3s cubic-bezier(0.66, 0, 0.34, 1);
   width: 1em;
@@ -86,7 +114,7 @@ html {
 
 .dropd_w {
   padding: 30px;
-  width: 500px;
+  width: auto;
 }
 
 .drop_down_lists {
@@ -95,13 +123,14 @@ html {
 }
 
 .dropdown_content {
-  margin: 2.5rem 0;
+  margin: 1rem 0;
 }
 
 .dc_m {
   display: flex;
-  gap: 1.4rem;
-  padding-bottom: 20px;
+  gap: 1rem;
+  padding-bottom: 8px;
+  text-decoration: none;
 }
 
 .dc_m:last-child {
@@ -110,10 +139,12 @@ html {
 
 .dc_r h6 {
   color: #000000;
+  font-size: 16px;
 }
 
 .dc_r p {
   color: #8e8e8e;
+  font-size: 12px;
 }
 
 .dd_img {
@@ -136,6 +167,11 @@ html {
   outline: none;
   border: none;
   padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
 }
 
 header {
@@ -167,6 +203,7 @@ header {
   text-decoration: none;
   font-size: 1rem;
   text-transform: capitalize;
+  padding: 0;
 }
 
 .sideright {
@@ -187,6 +224,7 @@ header {
   display: flex;
   align-items: center;
   padding: 0 18px;
+  border-radius: 50px;
 }
 
 .closebtn {
@@ -215,9 +253,13 @@ header {
   font-size: 50px;
 }
 
-.getdemo_lalign a {
+.getdemo_lalign {
   font-size: 1.125rem;
   padding: 14px 28px;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  margin: 0;
 }
 
 .heading_contents p {
@@ -243,7 +285,7 @@ header {
 }
 
 .discover_name h1 {
-  font-size: 2.75rem;
+  font-size: 3.1rem;
 }
 
 .discover_name p {
@@ -416,13 +458,14 @@ header {
   font-size: 30px;
 }
 
+
 .from_recommdention_conversion {
   width: 100%;
-  margin: 6rem auto;
+  padding: 6rem 0;
 }
 
 .from_recommdention_conversion h3 {
-  font-size: 2.25rem;
+  font-size: 1.875rem;
 }
 
 .get_demo {
@@ -431,8 +474,11 @@ header {
 
 .get_demo a {
   color: #ffffff;
-  padding: 14px 50px;
+  padding: 10px 40px;
 }
+
+
+
 
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -443,6 +489,7 @@ header {
     font-size: 18px;
   }
 }
+
 
 .sideleft .me-4 a {
   display: block;
@@ -459,14 +506,44 @@ header {
   display: none;
 }
 
+.for_r {
+  font-size: 14px;
+}
+
+
 @media screen and (max-width: 1130px) {
+  .for_r {
+    font-size: 12px;
+  }
+
+  .get_app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 0 0 0;
+    border: 1px solid red;
+  }
+
+  .logo_business {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid green;
+  }
+
+  .get_the_app a {
+    border: 1px solid #8111E8;
+    border-radius: 6px;
+    padding: 6px 16px !important;
+    border: 1px solid blue;
+  }
+
   .sideleft .me-4 img {
     display: none;
   }
 
   .sideleft .me-4 svg {
     display: block;
-    width: 80%;
   }
 
   .active .fw {
@@ -498,11 +575,27 @@ header {
     margin-top: 1rem;
   }
 
+  .sidenav_text{
+    font-size: 14px;
+  }
+
   .nav-item:nth-child(6) {
-    margin: 1rem 0;
-    padding: 1rem 0;
+    margin: 0;
+    padding: 6px 0;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
+    font-size: 12px !important;
+    /* background-color: red; */
+  }
+
+  .nav-item a:nth-child(7) {
+    padding: 6px 10px;
+    height: -webkit-fill-available;
+    max-width: 30%;
+  }
+
+  .headerIconsRes {
+    width: 14%;
   }
 
   .login_cta a {
@@ -510,9 +603,13 @@ header {
     background: #8100e9;
     border-radius: 22px;
     color: #ffffff !important;
-    width: 124px !important;
-    height: 44px;
+    width: 93px !important;
+    height: 38px;
     text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
   }
 
   .header1 .ms-5 {
@@ -521,7 +618,7 @@ header {
 
   .openNav {
     display: block;
-    color: #fff;
+    color: #ffffff;
   }
 
   .sideright {
@@ -556,7 +653,7 @@ header {
   .sidenav a {
     padding: 8px 8px 10px 0px;
     text-decoration: none;
-    font-size: 18px !important;
+    font-size: 16px !important;
     color: #000;
     display: block;
     transition: 0.3s;
@@ -589,7 +686,7 @@ header {
   }
 
   header {
-    padding: 20px 25px;
+    padding: 10px 25px;
     background-color: #000;
   }
 
@@ -605,7 +702,7 @@ header {
   /*e  */
 
   .section_content {
-    padding: 2rem;
+    padding: 2rem 1rem 0 1rem;
   }
 
   .video-js {
@@ -615,11 +712,12 @@ header {
   .bg_black_content {
     align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
   }
 
-  .getdemo_lalign a {
+  .getdemo_lalign  {
     font-size: 1rem;
+    padding: 10px 20px;
+    margin: auto
   }
 
   .heading_contents h1 {
@@ -630,10 +728,11 @@ header {
   .heading_contents p {
     text-align: center;
     font-size: 17px;
+    margin: 0;
   }
 
   .content_text p {
-    text-align: center;
+    text-align: left;
   }
 
   .contents {
@@ -647,11 +746,12 @@ header {
   .img_header {
     width: 100%;
     height: auto;
-    margin-top: 2rem;
+    margin: 2.3rem 0;
   }
 
   .discover_name {
     width: 100%;
+    margin: 5rem 0;
   }
 
   .discover_name h1 {
@@ -665,7 +765,7 @@ header {
   .content1 {
     flex-direction: column;
     width: 100%;
-    gap: 4rem;
+    gap: 2rem;
     margin-bottom: 0rem;
     overflow-x: hidden;
   }
@@ -692,16 +792,16 @@ header {
   }
 
   .content_text h3 {
-    font-size: 1.2rem;
+    font-size: 20px;
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .content2 {
     flex-direction: column !important;
     width: 100%;
     gap: 0rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
     overflow-x: hidden;
   }
 
@@ -766,12 +866,24 @@ header {
     color: #757575;
   }
 
+
   .from_recommdention_conversion {
     width: 100%;
+    padding: 2rem auto;
   }
 
   .from_recommdention_conversion h3 {
-    font-size: 1rem;
+    font-size: 1.125rem;
+  }
+
+
+  .get_demo {
+    margin-top: 24px;
+  }
+
+  .get_demo a {
+    padding: 10px 25px;
+    font-size: 14px;
   }
 
   .refr_svg_logo svg {
@@ -783,8 +895,7 @@ header {
   .become_partner {
     font-size: 20px !important;
   }
-
-  .get_demo a {
-    padding: 10px 30px;
+  .bg_black{
+    margin: -1px 0 0 0 ;
   }
 }

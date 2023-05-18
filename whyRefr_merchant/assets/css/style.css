@@ -645,6 +645,7 @@ header {
 
   .discover_name {
     width: 100%;
+    padding: 4rem 0;
   }
 
   .discover_name h1 {
