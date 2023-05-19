@@ -549,6 +549,8 @@ header {
 
 .from_recommdention_conversion h3 {
   font-size: 1.875rem;
+  width: 75%;
+  margin: auto;
 }
 
 /* media queries and animation  */
@@ -1387,6 +1389,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.slide img{
+  width: 100%;
 }
 
 /* fade in n out video */
